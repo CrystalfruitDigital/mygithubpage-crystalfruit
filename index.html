@@ -16,7 +16,7 @@ html{
 
 <!--
 var rows=1; // must be an odd number
-var speed=15; // lower is faster
+var speed=10; // lower is faster
 var reveal=2; // between 0 and 2 only. The higher, the faster the word appears
 var effectalign="center" //enter "center" to center it.
 
@@ -129,7 +129,7 @@ function zoomer(ycol) {
         mtmp=document.all["Mx"+ytmp+"y"+ycol];
         mtmp.innerHTML=m_coch[ycol];
       }
-      mtmp.style.color="white";
+      mtmp.style.color="#9CF";
       mtmp.style.fontWeight="bold";
     }
     if (Math.random()<reveal) {
@@ -262,7 +262,7 @@ function zoomer(ycol) {
                 <li class="layer" data-depth="0.30">
                     <div class="hero">
 					<br>
-						<h2 style="color:white">Website Coming</h2>
+						<h2 style="color:white">&lt;Website Coming/&gt;</h2>
                         <center><div id="matrix">
 						WHEN IT'S READY :P
 						</div><br>
