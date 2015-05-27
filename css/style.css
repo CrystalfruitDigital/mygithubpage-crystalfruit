@@ -161,7 +161,7 @@ h2 {
 	width: 100%;
 	position: absolute;
 	z-index: 2;
-	top: 10%;
+	top: 1%;
 }
 
 .line {
@@ -338,9 +338,9 @@ h2 {
 	/* HERO */
 	h1 { font-size: 40px; line-height: 40px; }
 	#countdown div span {font-size: 24px; line-height: 34px;color: white;}
-	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
+	.sub-title { font-size: ; line-height: ; margin-top: 5px; }
 	/* TITLE & CONTACT */
-	.title { top: 15%;}
+	.title { top: 2%;}
 	.contact .icons { margin-bottom: 0px; }
 	/* SIZES */
 	.sphere img{
@@ -408,6 +408,14 @@ h2 {
 		right: 0;
 		top: 0;
 	}
+	.matrix { 
+		font-family:'Roboto';
+		font-size:2em; 
+		text-align:center; 
+		width:10px; 
+		padding:0px; 
+		margin:0px;
+	}
 }
 
 /* Tablet Portrait */
@@ -416,9 +424,9 @@ h2 {
 	h1 { font-size: 90px; line-height: 90px; }
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 10px; }
 	/* TITLE & CONTACT */
-	.title { top: 18%;}
+	.title { top: 0%;}
 	.line { margin-top: 20px; }
-	.contact { bottom: 10%; }
+	.contact { bottom: 0%; }
 	.contact .icons { margin-bottom: 12px; }
 	/* SIZES */
 	.sphere img{
