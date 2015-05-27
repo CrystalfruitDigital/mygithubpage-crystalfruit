@@ -1,2 +1,1 @@
-mygithubpage
-============
+Coming Soon Template
