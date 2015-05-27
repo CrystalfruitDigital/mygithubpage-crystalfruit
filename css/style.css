@@ -167,9 +167,9 @@ h2 {
 .line {
 	display: block;
 	margin: 0 auto;
-	width: 60px;
-	height: 1px;
-	background: #445566;
+	width: 50%;
+	height: 2px;
+	background: #AACCFF;
 	margin-top: 10px;
 }
 
