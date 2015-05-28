@@ -30,6 +30,7 @@
                 points.push(p);
             }
         }
+		
 
         // for each point find the 5 closest points
         for(var i = 0; i < points.length; i++) {
@@ -66,18 +67,66 @@
             var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.8)');
             points[i].circle = c;
         }
-    }
+    }	
+	
+	function createExplosion(x, y, color)
+	{
+		var minSize = 10;
+		var maxSize = 30;
+		var count = 10;
+		var minSpeed = 60.0;
+		var maxSpeed = 200.0;
+		var minScaleSpeed = 1.0;
+		var maxScaleSpeed = 4.0;
+		
+		
+		for (var angle=0; angle<360; angle += Math.round(360/count))
+		{
+			var particle = new Particle();
+			
+			particle.x = x;
+			particle.y = y;
+			
+			particle.radius = randomFloat(minSize, maxSize);
+			
+			particle.color = color;
+			
+			particle.scaleSpeed = randomFloat(minScaleSpeed, maxScaleSpeed);
+			
+			var speed = randomFloat(minSpeed, maxSpeed);
+			
+			particle.velocityX = speed * Math.cos(angle * Math.PI / 180.0);
+			particle.velocityY = speed * Math.sin(angle * Math.PI / 180.0);
+			
+			particles.push(particle);
+		}
+	}
 
     // Event handling
     function addListeners() {
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
+            window.addEventListener('mouseclick', mouseClick);
         }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
 
     function mouseMove(e) {
+        var posx = posy = 0;
+        if (e.pageX || e.pageY) {
+            posx = e.pageX;
+            posy = e.pageY;
+        }
+        else if (e.clientX || e.clientY)    {
+            posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+            posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+        target.x = posx;
+        target.y = posy;
+    }
+	
+	function mouseClick(e) {
         var posx = posy = 0;
         if (e.pageX || e.pageY) {
             posx = e.pageX;
@@ -103,6 +152,7 @@
         canvas.width = width;
         canvas.height = height;
     }
+	
 
     // animation
     function initAnimation() {
@@ -183,3 +233,4 @@
     }
     
 })();
+
