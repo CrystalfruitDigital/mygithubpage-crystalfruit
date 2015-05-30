@@ -1,0 +1,134 @@
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--<![endif]-->
+
+    <head>
+
+        <meta charset="utf-8">
+		
+        <title>
+            Crystalfruit Digital Solutions
+        </title>
+		
+		<!-- Behavioral Meta Data -->
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"><!-- Core Meta Data -->
+        <meta content="Crystalfruit" name="author">
+        <meta content="A digital solutions company" name="description">
+        <meta content="Crystalfruit, digital, solutions, website, design, designers, software, development, developers, mobile, application, Android, iOS, creation, technology, freelance, computer, Github, CrysatlfruitDigital, Crystalfruitdigital.com" name="keywords"><!-- Open Graph Meta Data -->
+        <meta content="A digital solutions company">
+        <meta content="crystalfruit">
+        <meta content="crystalfruit">
+        <meta content="website">
+        <meta content="index.html"><!-- Twitter Card Meta Data -->
+        <meta content="summary" name="twitter:card">
+        <meta content="@crystalfruit" name="twitter:site">
+        <meta content="@crystalfruit" name="twitter:creator">
+        <meta content="Crystalfruit" name="twitter:title">
+        <meta content="Crystalfruit - A Digital Solutions Company" name="twitter:description">
+		<link rel="icon" type="image/png" href="../images/logo.png">
+
+        <link href="favicon.png" rel="shortcut icon" type="image/png">
+
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Styles -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+		
+        <!-- Javascript -->
+        <script src="../js/jquery.js"></script>
+		
+    </head>
+    <body>
+        
+		<div class="wrapper">
+			<span id="exit" onClick="window.location.href='index.html'">X</span>
+		
+			<div class="section-top shadow-out">
+				<h1>TEAM CRYSTALFRUIT</h1>
+				<div class="navbar">
+					<ul>
+						<li>
+							<button id="NewsToggle" class="button">News</button>
+						</li>
+						<li>
+							<button id="JobsToggle" class="button">Jobs</button>
+						</li>
+						<li>
+							<button id="CalendarToggle" class="button">Calendar</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="content">
+				<div id="news" class="section-mid">
+					<center><h1>News</h1></center>
+					<div class="line"></div>
+					<div class="post">
+						testtestestestsetsetsets
+					</div>
+				</div>
+				
+				<div id="jobs" class="section-mid">
+					<center><h1>Jobs</h1></center>
+					<div class="line"></div>
+					<div class="post">
+						testtestestestsetsetsets
+					</div>
+				</div>
+				
+				<center><div id="calendar" class="section-mid">
+					<h1>Calendar</h1>
+					<div class="line"></div>
+						<iframe src="https://www.google.com/calendar/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=mmdu58cp9cennm6bgbesr685pk%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style=" border-width:0 " width="1000" height="700" frameborder="0" scrolling="no"></iframe></div>
+					
+					<br>
+				</div>
+				
+				
+			</div>
+		
+
+        <!-- Javascript -->
+        <script src="../js/plugins.js"></script> 
+        <script src="../js/jquery.countdown.min.js"></script> 
+        <script src="../js/main.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(
+		
+		function(){
+			$("#NewsToggle").click(function(){
+				$("#news").show();
+				$("#jobs").hide();
+				$("#calendar").hide();
+			});
+			$("#JobsToggle").click(function(){
+				$("#news").hide();
+				$("#jobs").show();
+				$("#calendar").hide();
+			});
+			$("#CalendarToggle").click(function(){
+				$("#calendar").show();
+				$("#news").hide();
+				$("#jobs").hide();
+			});
+		});
+		</script>
+
+		
+    </body>
+</html>
