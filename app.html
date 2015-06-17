@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link href="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.css" rel="stylesheet">
+  <link href="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="https://s3.amazonaws.com/codiqa-cdn/codiqa.ext.js"></script>
+
+  <script src="script.js"></script>
+
+</head>
+<body>
+<div data-role="page" data-control-title="Landing" id="page3">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            Crystal Quote
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <a href="#page1" class="ui-btn ">
+            Website Creation Quote
+        </a>
+        <a href="#page3" class="ui-btn ">
+            Graphic Designs Quote (Coming Soon)
+        </a>
+    </div>
+    <div data-theme="b" data-role="footer" data-position="fixed">
+        <div>
+            <a id="cfd_link" href="" target="_blank" data-transition="fade" class="link">
+                www.crystalfruitdigital.com
+            </a>
+        </div>
+    </div>
+</div>
+<div data-role="page" data-control-title="Web" id="page1">
+    <div id="header-bar" data-theme="b" data-role="header" data-position="fixed">
+        <h1 class="ui-title">
+            Crystal Quote (Web)
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="website_name">
+                Website Name
+            </label>
+            <input name="" id="website_name" placeholder="www.example.com ..." value=""
+            type="url">
+        </div>
+        <div id="section_primary_purpose" class="ui-field-contain" data-controltype="radiobuttons">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Primary Purpose
+                </legend>
+                <input id="radio1" name="" value="purpose_option_1" type="radio">
+                <label for="radio1">
+                    Show and Tell
+                </label>
+                <input id="radio2" name="" value="purpose_option_2" type="radio">
+                <label for="radio2">
+                    Physical Products E-Store
+                </label>
+                <input id="radio3" name="" value="purpose_option_3" type="radio">
+                <label for="radio3">
+                    Business / Service
+                </label>
+            </fieldset>
+        </div>
+        <div id="checkboxes1" class="ui-field-contain" data-controltype="checkboxes">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Features
+                </legend>
+                <input id="checkbox1" name="feature_wordpress" type="checkbox">
+                <label for="checkbox1">
+                    WordPress
+                </label>
+                <input id="checkbox2" name="feature_blog" type="checkbox">
+                <label for="checkbox2">
+                    Blog
+                </label>
+                <input id="checkbox3" name="feature_gallery" type="checkbox">
+                <label for="checkbox3">
+                    Image Gallery
+                </label>
+                <input id="checkbox4" name="feature_mobile" type="checkbox">
+                <label for="checkbox4">
+                    Mobile Friendly
+                </label>
+                <input id="checkbox5" name="feature_metrics" type="checkbox">
+                <label for="checkbox5">
+                    Metrics and Analytics
+                </label>
+            </fieldset>
+        </div>
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="textinput5">
+                Need it by:
+            </label>
+            <input name="" id="textinput5" placeholder="" value="" type="date">
+        </div>
+    </div>
+    <div data-theme="b" data-role="footer" data-position="fixed">
+        <a id="nav_home" data-inline="true" href="#page3" data-icon="arrow-l"
+        data-iconpos="left" class="ui-btn  ui-icon-arrow-l ui-btn-icon-left">
+            Home
+        </a>
+        <a id="nav_quote" data-inline="true" href="#page2" data-icon="check" data-iconpos="right"
+        class="ui-btn  ui-icon-check ui-btn-icon-right">
+            Get Quote
+        </a>
+    </div>
+</div>
+<div data-role="page" data-control-title="Graphic" id="page4">
+    <div data-theme="b" data-role="header" data-position="fixed">
+        <h1 class="ui-title">
+            Crystal Quote (Web)
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div class="ui-field-contain" data-controltype="radiobuttons">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Primary Purpose
+                </legend>
+                <input id="radio6" name="" value="purpose_option_1" type="radio">
+                <label for="radio6">
+                    Show and Tell
+                </label>
+                <input id="radio7" name="" value="purpose_option_2" type="radio">
+                <label for="radio7">
+                    Physical Products E-Store
+                </label>
+                <input id="radio8" name="" value="purpose_option_3" type="radio">
+                <label for="radio8">
+                    Business / Service
+                </label>
+            </fieldset>
+        </div>
+        <div id="checkboxes2" class="ui-field-contain" data-controltype="checkboxes">
+            <fieldset data-role="controlgroup" data-type="vertical">
+                <legend>
+                    Features
+                </legend>
+                <input id="checkbox6" name="feature_wordpress" type="checkbox">
+                <label for="checkbox6">
+                    WordPress
+                </label>
+                <input id="checkbox7" name="feature_blog" type="checkbox">
+                <label for="checkbox7">
+                    Blog
+                </label>
+                <input id="checkbox8" name="feature_gallery" type="checkbox">
+                <label for="checkbox8">
+                    Image Gallery
+                </label>
+                <input id="checkbox9" name="feature_mobile" type="checkbox">
+                <label for="checkbox9">
+                    Mobile Friendly
+                </label>
+                <input id="checkbox10" name="feature_metrics" type="checkbox">
+                <label for="checkbox10">
+                    Metrics and Analytics
+                </label>
+            </fieldset>
+        </div>
+        <div class="ui-field-contain" data-controltype="textinput">
+            <label for="textinput7">
+                Need it by:
+            </label>
+            <input name="" id="textinput7" placeholder="" value="" type="date">
+        </div>
+    </div>
+    <div data-theme="b" data-role="footer" data-position="fixed">
+        <input type="submit" data-inline="true" data-icon="arrow-l" data-iconpos="left"
+        value="Home">
+        <input type="submit" data-inline="true" data-icon="forward" data-iconpos="left"
+        value="Submit">
+    </div>
+</div>
+<div data-role="page" data-control-title="Quote" id="page2">
+    <div data-theme="b" data-role="header">
+        <h1 class="ui-title">
+            Crystal Quote
+        </h1>
+    </div>
+    <div role="main" class="ui-content">
+        <div data-controltype="textblock">
+            <p>
+                <b>
+                    Your total comes out to...
+                </b>
+            </p>
+        </div>
+        <h3 id="total_estimate_text">
+            (Total Amount)
+        </h3>
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h3>
+                    Details
+                </h3>
+                <div data-controltype="textblock">
+                    <ul>
+                        <li>
+                            <b>
+                                Item 1
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                Item 2
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                Item 3
+                            </b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-theme="b" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="arrow-l">
+                        Retry
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="check">
+                        Send!
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h3 class="ui-title">
+            Crystalfruit Digital Solutions
+        </h3>
+    </div>
+</div>
+</body>
+</html>
