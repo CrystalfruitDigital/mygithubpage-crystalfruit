@@ -107,7 +107,7 @@ blockquote cite {
 /* Special */
 .sub-title {
   margin: 50px auto;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -115,22 +115,22 @@ blockquote cite {
 .button {
   display: inline-block;
   padding: 6px 10px;
-  color: #aa3333;
-  border: 1px solid #888;
+  color: #c77;
+  border: 1px solid #aaa;
   border-radius: 3px;
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  transition: 1s;
 }
 
 .button:hover {
   display: inline-block;
-  background-color: rgba(255,255,255.2);
   padding: 6px 10px;
   color: #faa;
-  border: 1px solid #aaa;
+  border: 1px solid #ddd;
   border-radius: 3px;
   font-weight: 700;
   line-height: normal;
