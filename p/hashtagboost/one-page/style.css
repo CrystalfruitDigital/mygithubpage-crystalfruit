@@ -30,6 +30,7 @@ r {
 	color: red;
 	text-decoration: underline;
 	text-decoration-color: red;
+	transition: 1s;
 }
 
 .social {
@@ -37,8 +38,8 @@ r {
 }
 
 .social i{
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .social i:hover{
@@ -47,6 +48,6 @@ r {
 }
 
 .coming-soon {
-	-webkit-animation-duration: 7s;
-	-vendor-animation-duration: 7s;
+	-webkit-animation-duration: 6s;
+	-vendor-animation-duration: 6s;
 }
