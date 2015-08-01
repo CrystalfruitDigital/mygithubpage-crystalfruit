@@ -23,13 +23,13 @@ body {
 }
 
 r {
-	color: red;
+	color: rgb(212, 37, 37);
 }
 
 .boost {
-	color: red;
+	color: rgb(212, 37, 37);
 	text-decoration: underline;
-	text-decoration-color: red;
+	text-decoration-color: rgb(212, 37, 37);
 }
 
 .social {
