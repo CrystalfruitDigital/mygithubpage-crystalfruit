@@ -31,3 +31,16 @@ r {
 	text-decoration: underline;
 	text-decoration-color: red;
 }
+
+.social {
+	font-size: 20px;
+}
+
+.social i{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.coming-soon {
+	-vendor-animation-duration: 3s;
+}
