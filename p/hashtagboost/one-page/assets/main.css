@@ -115,7 +115,7 @@ blockquote cite {
 .button {
   display: inline-block;
   padding: 6px 10px;
-  color: #c77;
+  color: #d33;
   border: 1px solid #aaa;
   border-radius: 3px;
   font-weight: 700;
@@ -123,13 +123,13 @@ blockquote cite {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  transition: 1s;
+  transition: .5s;
 }
 
 .button:hover {
   display: inline-block;
   padding: 6px 10px;
-  color: #faa;
+  color: #f77;
   border: 1px solid #ddd;
   border-radius: 3px;
   font-weight: 700;
