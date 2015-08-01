@@ -23,25 +23,25 @@ body {
 }
 
 r {
-	color: #bd3131;
+	color: red;
 }
 
 .boost {
-	color: #bd3131;
+	color: red;
 	text-decoration: underline;
-	text-decoration-color: #bd3131;
+	text-decoration-color: red;
 }
 
 .social {
 	font-size: 30px;
 	transition: 1s;
-	color: #bd3131;
+	color: rgb(212, 37, 37);
 }
 
 .social i{
 	margin-left: 10px;
 	margin-right: 10px;
-	color: #bd3131;
+	color: rgb(212, 37, 37);
 	transition: .5s;
 }
 
