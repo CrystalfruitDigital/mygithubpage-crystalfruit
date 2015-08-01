@@ -19,7 +19,7 @@ body {
 
 @font-face {
 	font-family: "NEW ACADEMY";
-	src: url(NEWACADEMY.ttf) format("truetype");
+	src: url(fonts/NEWACADEMY.ttf) format("truetype");
 }
 
 r {

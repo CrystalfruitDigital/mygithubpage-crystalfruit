@@ -4,13 +4,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Responsive Full Background Image</title>
+<title>#BOOST | Coming Soon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
   <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/animate.css">
+  <link rel="stylesheet" href="assets/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="assets/main.js"></script>
@@ -20,17 +22,32 @@
     <section class="content">
 	  <center><img src="images/logo-med.png" width="200px"></img></center>
       <h1><u>#<r class="boost">BOOST</r></u></h1>
-      <p class="sub-title">[ Coming Soon ]</p>
+      <p class="sub-title">[ <r class="animated infinite pulse">Coming Soon</r> ]</p>
       <p><a class="button" id="load-more-content" href="#top">Learn More</a></p>
-      <p>To see scrolling behavior</p>
       
       <div id="more-content">
         <blockquote>
-			Text goes here!
+			<r>
+				<i class="fa fa-instagram"></i>
+				&nbps;&nbps;<i class="fa fa-facebook-official"></i>
+				&nbps;&nbps;<i class="fa fa-twitter-square"></i>
+			</r>
         </blockquote>
 		test
       </div>
     </section>
   </header>
 </body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60440584-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </html>

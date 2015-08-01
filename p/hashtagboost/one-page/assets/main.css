@@ -25,7 +25,7 @@ h1 {
   font: "NEW ACADEMY", sans-serif;
   color: #efecec;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 50px;
   font-weight: 400;
   margin-top: 20px;
@@ -44,6 +44,7 @@ strong {
 }
 
 blockquote {
+  font: Segoe UI Light, Palatino Linotype, Trebuchet MS, sans-serif;
   display: block;
   max-width: 480px;
   margin: 15px auto;
@@ -51,7 +52,7 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.3);  
   color: #e1e1e1;
   font-family: serif;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -106,7 +107,7 @@ blockquote cite {
 /* Special */
 .sub-title {
   margin: 50px auto;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 23px;
   text-transform: uppercase;
 }
