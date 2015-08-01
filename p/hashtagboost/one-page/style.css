@@ -1,27 +1,33 @@
-/* Responsive Full Background Image Using CSS
- * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+/* 
+ * Powered by: http://sixrevisions.com/css/responsive-background-image/
 */
 body {
-  /* Location of the image */
   background-image: url(images/bg.png);
-  
-  /* Image is centered vertically and horizontally at all times */
   background-position: center center;
-  
-  /* Image doesn't repeat */
   background-repeat: no-repeat;
-  
-  /* Makes the image fixed in the viewport so that it doesn't move when 
-     the content height is greater than the image height */
   background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based on its container's size */
   background-size: cover;
-  
-  /* Pick a solid background color that will be displayed while the background image is loading */
   background-color:#464646;
-  
-  /* SHORTHAND CSS NOTATION
-   * background: url(background-photo.jpg) center center cover no-repeat fixed;
-   */
+  font-family: 'NEW ACADEMY';
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+	padding: 10px;
+  }
+}
+
+@font-face {
+	font-family: "NEW ACADEMY";
+	src: url(NEWACADEMY.ttf) format("truetype");
+}
+
+r {
+	color: red;
+}
+
+.boost {
+	color: red;
+	text-decoration: underline;
+	text-decoration-color: red;
 }

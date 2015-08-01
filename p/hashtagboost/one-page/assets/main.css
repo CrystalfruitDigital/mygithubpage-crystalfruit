@@ -1,6 +1,7 @@
-/* Presentational style rules only
- * Not required
- */
+@font-face {
+	font-family: "NEW ACADEMY";
+	src: url(NEWACADEMY.ttf) format("truetype");
+}
 
 html, body, .container {
   height: 100%;
@@ -16,11 +17,12 @@ html, body, h1, p, a, div, section {
 
 /* Basic */
 body { 
-  font: sans-serif;
+  font: "NEW ACADEMY", sans-serif;
   color: #ffffff;
 }
 
 h1 {
+  font: "NEW ACADEMY", sans-serif;
   color: #efecec;
   text-transform: uppercase;
   font-size: 40px;
@@ -55,7 +57,7 @@ blockquote {
 
 blockquote cite {
   display: block;
-  font: sans-serif;
+  font: Segoe UI Light, Palatino Linotype, Trebuchet MS, sans-serif;
   font-size: 16px;
   margin-top: 16px;
   color: #cccccc;
