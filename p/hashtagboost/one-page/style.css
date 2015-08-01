@@ -33,7 +33,7 @@ r {
 }
 
 .social {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 .social i{
@@ -41,6 +41,12 @@ r {
 	margin-right: 5px;
 }
 
+.social i:hover{
+	color: #faa;
+	cursor: pointer;
+}
+
 .coming-soon {
-	-vendor-animation-duration: 3s;
+	-webkit-animation-duration: 7s;
+	-vendor-animation-duration: 7s;
 }
