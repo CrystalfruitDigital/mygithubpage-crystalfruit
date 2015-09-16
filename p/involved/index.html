@@ -27,7 +27,7 @@
 						</thead>
 						<tbody>
 							<tr ng-repeat="field in fields">
-								<td>{{field.text}}</td>
+								<td ng-repeat="field in fields">{{field.text}}</td>
 							</tr>
 						</tbody>
 					</table>

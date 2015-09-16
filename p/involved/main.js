@@ -27,9 +27,8 @@ app.controller("mainCtrl", function($scope, $firebaseArray) {
     $scope.fields = imRef;
 
     $scope.pushCSV = function() {
-        ref.remove();
-        var file = $("#targetFile").parse($("#targetFile"), config);
-        ref.push(file);
+        // var file = $("#targetFile").parse($("#targetFile"), config);
+        ref.push({"text":"hi"});
     }
 
     $scope.deleteMe = function(video) {
