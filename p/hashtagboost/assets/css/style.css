@@ -216,6 +216,7 @@ textarea.form-control {
 	font-size: 13px;
 	padding: 8px 26px;
 	border: 0;
+	box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.3);
 }
 
 .slow-anim{
@@ -387,12 +388,12 @@ textarea.form-control {
 }
 
 .overlay-2 {
-	opacity: 0.75;
-	background-image: -o-linear-gradient(bottom, #000 25%, #359 100%);
-	background-image: -moz-linear-gradient(bottom, #000 25%, #359 100%);
-	background-image: -webkit-linear-gradient(bottom, #000 25%, #359 100%);
-	background-image: -ms-linear-gradient(bottom, #000 25%, #359 100%);
-	background-image: linear-gradient(to bottom, #000 25%, #359 100%);
+	opacity: 0.85;
+	background-image: -o-linear-gradient(bottom, #000 25%, #013 100%);
+	background-image: -moz-linear-gradient(bottom, #000 25%, #013 100%);
+	background-image: -webkit-linear-gradient(bottom, #000 25%, #013 100%);
+	background-image: -ms-linear-gradient(bottom, #000 25%, #013 100%);
+	background-image: linear-gradient(to bottom, #000 25%, #013 100%);
     background-repeat: repeat;
     height: 100%;
     left: 0;
