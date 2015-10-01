@@ -350,7 +350,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	/*background: url(../images/tawny2.png);*/
+	background: url(../images/sample-min.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -376,8 +376,23 @@ textarea.form-control {
 }
 
 .home-overlay {
-    background-color: rgba(54, 62, 80, 0.8);
     background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.overlay-2 {
+	opacity: 0.75;
+	background-image: -o-linear-gradient(bottom, #000 25%, #359 100%);
+	background-image: -moz-linear-gradient(bottom, #000 25%, #359 100%);
+	background-image: -webkit-linear-gradient(bottom, #000 25%, #359 100%);
+	background-image: -ms-linear-gradient(bottom, #000 25%, #359 100%);
+	background-image: linear-gradient(to bottom, #000 25%, #359 100%);
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -447,9 +462,23 @@ textarea.form-control {
 	color: black;
 }
 
-/* ---------------------------------------------- /*
- * Skills
-/* ---------------------------------------------- */
+#catch{
+	background-image: url(../images/sample2-min.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+
+}
+
+
+.catch-overlay {
+	backgroundcol
+}
+
 
 .lighter-blox h3, h5{
 	color: white;
@@ -728,7 +757,7 @@ textarea.form-control {
 	}
 
 	#home {
-		background: url(../images/viper-bg.png);
+		/*background: url(../images/viper-bg.png);*/
 	}
 
 	#cover-credit:after {
