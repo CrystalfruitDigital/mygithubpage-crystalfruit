@@ -196,26 +196,8 @@ textarea.form-control {
 }
 
 .regField{
-	padding: 0 10px 0 10px;
 	margin: 0 0 20px 0;
 	min-width: 300px;
-	color: black;
-}
-
-::-webkit-input-placeholder {
-   color: #444;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #444;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #444;  
-}
-
-:-ms-input-placeholder {  
-   color: #444;  
 }
 
 .subtleText{
@@ -234,6 +216,7 @@ textarea.form-control {
 	font-size: 13px;
 	padding: 8px 26px;
 	border: 0;
+	box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.3);
 }
 
 .slow-anim{
@@ -292,26 +275,13 @@ textarea.form-control {
 }
 
 .pfblock-red {
-	background-image: -o-linear-gradient(bottom, #a23 25%, #f00 100%);
-	background-image: -moz-linear-gradient(bottom, #a23 25%, #f00 100%);
-	background-image: -webkit-linear-gradient(bottom, #a23 25%, #f00 100%);
-	background-image: -ms-linear-gradient(bottom, #a23 25%, #f00 100%);
-	background-image: linear-gradient(to bottom, #a23 25%, #f00 100%);
+	background-image: -o-linear-gradient(bottom, #cc2020 25%, #f00 100%);
+	background-image: -moz-linear-gradient(bottom, #cc2020 25%, #f00 100%);
+	background-image: -webkit-linear-gradient(bottom, #cc2020 25%, #f00 100%);
+	background-image: -ms-linear-gradient(bottom, #cc2020 25%, #f00 100%);
+	background-image: linear-gradient(to bottom, #cc2020 25%, #f00 100%);
 	color: white;
 }
-
-.pfblock-skill {
-	background: url(../images/reach.jpg);
-	background-color: #222;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-}
-
 .pfblock-gray {
 	background: #111;
 	color: white;
@@ -381,7 +351,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/home.jpg);
+	background: url(../images/sample-min.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -394,7 +364,7 @@ textarea.form-control {
 }
 
 #regPage {
-	background: url(../images/reach.jpg);
+	background: url(../images/attila-boost.png);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -407,8 +377,23 @@ textarea.form-control {
 }
 
 .home-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
     background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.overlay-2 {
+	opacity: 0.75;
+	background-image: -o-linear-gradient(bottom, #000 25%, #000c1c 100%);
+	background-image: -moz-linear-gradient(bottom, #000 25%, #000c1c 100%);
+	background-image: -webkit-linear-gradient(bottom, #000 25%, #000c1c 100%);
+	background-image: -ms-linear-gradient(bottom, #000 25%, #000c1c 100%);
+	background-image: linear-gradient(to bottom, #000 25%, #000c1c 100%);
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -460,7 +445,6 @@ textarea.form-control {
 	text-align: center;
 	padding: 40px 20px;
 	margin: 0 0 20px;
-  box-shadow: 0px 15px 20px -5px rgba(0,0,0,.5);
 }
 
 .iconbox-icon {
@@ -478,9 +462,23 @@ textarea.form-control {
 	color: black;
 }
 
-/* ---------------------------------------------- /*
- * Skills
-/* ---------------------------------------------- */
+#catch{
+	background-image: url(../images/sample2-min.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+
+}
+
+
+.catch-overlay {
+	backgroundcol
+}
+
 
 .lighter-blox h3, h5{
 	color: white;
@@ -524,7 +522,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #000;
+	background: #111;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
@@ -759,7 +757,7 @@ textarea.form-control {
 	}
 
 	#home {
-		background: url(../images/viper-bg.png);
+		/*background: url(../images/viper-bg.png);*/
 	}
 
 	#cover-credit:after {
@@ -1057,43 +1055,4 @@ figure.effect-bubba:hover p {
 		width: 80px;
 	}
 
-}
-
-
-/* Terms and Conditions Box Popup */
-
-.terms-popup{
-	display: none;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	max-width: 500px;
-	max-height: 70%;
-	padding: 30px;
-	background-color: rgba(0, 0, 0, .95);
-}
-
-.terms-popup h3, a{
-	color: #888;
-}
-
-.terms-container{
-	padding: 10px;
-	background-color: white;
-	color: #333;
-	overflow-y: scroll;
-	max-height: 90%;
-}
-
-.close-terms{
-	color: #c88;
-	cursor: pointer;
-	transition: .5s;
-}
-
-.close-terms:hover{
-	color: #fcc;
 }
