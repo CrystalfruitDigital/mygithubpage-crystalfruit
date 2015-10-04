@@ -35,22 +35,22 @@
         <div class="home-overlay" style="opacity: 0.2"></div>
 		<div class="intro">
 				<h2><rtitle class="newAca whiteText wow fadeInUp" data-wow-delay="1s">#<rtitle>BOOST</rtitle><br>Promoter Registration</rtitle></h2>
-			<form class="regForm wow fadeInUp" data-wow-delay="1s" onsubmit="regNewUser()">
+			<form class="regForm wow fadeInUp" data-wow-delay="1s" onsubmit="registerNewUser()">
 				<br><br>
-				<input type="text" class="regField" placeholder="First Name" ng-model="user.firstName" required/><br>
-				<input type="text" class="regField" placeholder="Last Name" ng-model="user.lastName" required/><br>
-				<input type="text" class="regField" placeholder="E-mail" ng-model="user.email" required/><br>
-				<input type="password" class="regField" placeholder="Password" ng-model="user.password" required/><br>
-				<input type="password" class="regField" placeholder="Verify Password" ng-model="user.vPass" required/><br>
+				<input type="text" class="regField" placeholder="First Name" ng-model="firstName" required/><br>
+				<input type="text" class="regField" placeholder="Last Name" ng-model="lastName" required/><br>
+				<input type="text" class="regField" placeholder="E-mail" ng-model="email" required/><br>
+				<input type="password" class="regField" placeholder="Password" ng-model="password" required/><br>
+				<input type="password" class="regField" placeholder="Verify Password" ng-model="vPass" required/><br>
 
-				<input type="text" class="regField" placeholder="Instagram Name" ng-model="user.instagram" required/><br>
-				<select class="regField" ng-model="user.audience" required>
+				<input type="text" class="regField" placeholder="Instagram Name" ng-model="instagram" required/><br>
+				<select class="regField" ng-model="audience" required>
     				<option value="" disabled selected>Account Type</option>
 					<option value="fitness">Fitness</option>
 					<option value="beauty">Beauty</option>
 				</select><br>
 				<div class="pfblock-line"></div>
-				<input type="checkbox" class="regCheck" ng-model="user.termsChecked"/>
+				<input type="checkbox" class="regCheck" ng-model="termsChecked"/>
 				<span class="subtleText">
 					By checking this box you're agreeing to our <u><a href="#" onclick="toggleTerms()">terms and conditions</a></u>
 				</span>
@@ -65,7 +65,7 @@
 
 	<div class="terms-popup" id="termsWindow">
 		<h3>Terms and Conditions : Model's Employment Contract</h3>
-		<div class="terms-container">
+		<div class="terms-container" id="termsCopy">
 			<b>{{user.firstName}} {{user.lastName}}</b> (hereafter "Model") and #Boost, Inc./hashtagboost.com 
 
 (hereafter "#Boost") hereby enter into an agreement to the terms below:
@@ -155,6 +155,7 @@ performance.
 		<span class="close-terms" onClick=""><a href="#" onclick="toggleTerms()">Close</a></span>
 	</div>
 
+
 	<!-- Footer start -->
 
 	<footer id="footer">
@@ -164,11 +165,10 @@ performance.
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay="1s"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay="1.4s"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay="1.6s"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay="1.8s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://www.facebook.com/Hashtagboost-422789167928318/timeline/" class="wow fadeInUp" target="_blank" data-wow-delay="0s"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/hashtagboost" class="wow fadeInUp" target="_blank" data-wow-delay="0.2s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com/hashtagboost/" class="wow fadeInUp" target="_blank" data-wow-delay="0.4s"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joshcohen@hashtagboost.com" class="wow fadeInUp" target="_blank" data-wow-delay="0.6s"><i class="fa fa-envelope"></i></a></li>
 					</ul>
                     <p class="copyright">
                         © 2015 HashtagBoost.com | Created in part by CrystalFruit Digital Solutions
@@ -200,9 +200,7 @@ performance.
 	<script src="../assets/js/jquery.sticky.js"></script>
 	<script src="../assets/js/smoothscroll.js"></script>
 	<script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/jquery.easypiechart.js"></script>
     <script src="../assets/js/waypoints.min.js"></script>
-    <script src="../assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="../assets/js/custom.js"></script>
 	<script src="../assets/js/reg.js"></script>
 
