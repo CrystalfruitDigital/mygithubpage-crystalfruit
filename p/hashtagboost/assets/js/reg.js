@@ -27,6 +27,7 @@ app.controller("mainCtrl", function($scope) {
                     'user': newuser
                 },
                 success: function(data) {
+                	alert(data);
                     if (data.status == '409') {
                         alert('E-mail already in use!');
                     } else if (data.status == 'success') {
