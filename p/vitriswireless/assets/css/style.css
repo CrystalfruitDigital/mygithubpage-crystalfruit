@@ -1,17 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300);
-@font-face {
-  font-family: 'New Academy';
-  src: url('../fonts/NEW ACADEMY.ttf');
-}
+/*@import url(http://fonts.googleapis.com/css?family=Segoe UI Light:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+*/
+
 /*!
- * Clean v2.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
+ * Vitris Theme is based off of Bootstrap + Clean v2.0.0 by Script Eden
  * Licensed under MIT
 */
 
 body {
-	font: 300 18px/1.8 'Titillium Web', sans-serif;
+	font: 300 14px/1.8 'Segoe UI Light', sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -22,31 +19,13 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #228845;
 }
 
 a:hover {
 	text-decoration: none;
 	color: #999;
 }
-
-r {
-	color: #f00;
-	text-decoration: underline;
-}
-rtitle {
-	color: #dc2020;
-	text-decoration: underline;
-}
-
-.newAca {
-	font-family: "New Academy";
-}
-
-.whiteText{
-	color: #fff;
-}
-
 
 /* ---------------------------------------------- /*
  * Transition elsements
@@ -89,7 +68,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Titillium Web, sans-serif;
+	font: 700 40px/1.2 Segoe UI Light, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -97,29 +76,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 	margin: 0 0 30px;
 }
 
 h3 {
-	font-size: 23px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
 }
 
 h4 {
-	font-size: 18px;
+	font-size: 12px;
 	letter-spacing: 1px;
 }
 
 h5 {
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 400;
 }
 
 h6 {
-	font-size: 12px;
+	font-size: 11px;
 	letter-spacing: 1px;
 	font-weight: 400;
 }
@@ -190,38 +169,17 @@ textarea.form-control {
     min-width: 100%;
 }
 
-.regForm{
-	background-color: rgba(0,0,0,.5);
-	margin: 0 100px 0 100px;
-}
-
-.regField{
-	margin: 0 0 20px 0;
-	min-width: 300px;
-}
-
-.subtleText{
-	font-size: 10pt;
-	color: #888;
-}
-
 /* ---------------------------------------------- /*
  * Custom button style
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Titillium Web, sans-serif;
+	font-family: Segoe UI Light, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
 	padding: 8px 26px;
 	border: 0;
-	box-shadow: 0 0 15px -3px rgba(255, 255, 255, 0.3);
-}
-
-.slow-anim{
-    -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
-    animation-duration: 5s;
 }
 
 .btn:hover,
@@ -274,23 +232,20 @@ textarea.form-control {
 	padding: 120px 0 100px;
 }
 
-.pfblock-red {
-	background-image: -o-linear-gradient(bottom, #cc2020 25%, #f00 100%);
-	background-image: -moz-linear-gradient(bottom, #cc2020 25%, #f00 100%);
-	background-image: -webkit-linear-gradient(bottom, #cc2020 25%, #f00 100%);
-	background-image: -ms-linear-gradient(bottom, #cc2020 25%, #f00 100%);
-	background-image: linear-gradient(to bottom, #cc2020 25%, #f00 100%);
-	color: white;
-}
 .pfblock-gray {
-	background: #111;
-	color: white;
+	background: #f5f5f5;
 }
 
 .pfblock-image {
 	padding: 0;
 }
 
+.calltoaction h1,
+.calltoaction h2,
+.calltoaction h3,
+.calltoaction h4,
+.calltoaction h5,
+.calltoaction h6,
 .pfblock-image,
 .pfblock-image h1,
 .pfblock-image h2,
@@ -317,16 +272,10 @@ textarea.form-control {
 
 .pfblock-title{
     font-weight: 800;
-    color: white;
-}
-
-.pfblock-title-red{
-    font-weight: 800;
-    color: #dc2020;
 }
 
 .pfblock-subtitle {
-	font-family: Titillium Web, "Arial", Times, sans-serif;
+	font-family: Segoe UI Light, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -341,6 +290,48 @@ textarea.form-control {
 .pfblock-icon {
 	font-size: 32px;
 }
+.calltoaction *{
+    text-align: center;
+}
+.calltoaction {
+    background: url(../images/item-3.jpg);
+	background-color: #222;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	padding: 50px 0;
+	color: #999;
+}
+
+.calltoaction h2 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+.calltoaction-decription{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.calltoaction-btn {
+	text-align: center;
+}
+
+.calltoaction-btn > .btn {
+    background: rgba(255, 255, 255, .8);
+    color: #111;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.calltoaction-btn > .btn:hover{
+    background: #fff;
+}
 
 .long-down {
 	margin-bottom: 40px;
@@ -351,25 +342,11 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	/*background: url(../images/tawny2.png);*/
-	background: url(../images/sample-min.jpg);
+	background: url(../images/cover.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	padding: 0;
-}
-
-#regPage {
-	background: url(../images/attila-boost.png);
-	background-color: #222;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 100%;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
@@ -378,23 +355,8 @@ textarea.form-control {
 }
 
 .home-overlay {
+    background-color: rgba(44, 62, 80, 0.3);
     background-image: url("../images/pattern.png");
-    background-repeat: repeat;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-.overlay-2 {
-	opacity: 0.75;
-	background-image: -o-linear-gradient(bottom, #000 25%, #000c1c 100%);
-	background-image: -moz-linear-gradient(bottom, #000 25%, #000c1c 100%);
-	background-image: -webkit-linear-gradient(bottom, #000 25%, #000c1c 100%);
-	background-image: -ms-linear-gradient(bottom, #000 25%, #000c1c 100%);
-	background-image: linear-gradient(to bottom, #000 25%, #000c1c 100%);
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -406,7 +368,7 @@ textarea.form-control {
 
 .intro {
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	top: 50%;
 	left: 0;
 	text-align: center;
@@ -415,34 +377,44 @@ textarea.form-control {
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
-	padding: 0 15px;
+	padding: 15px;
 }
 
 .intro h1{
-	font-size: 10.0vh;
     font-weight: 800;
-    font-family: 'New Academy';
-    text-decoration: underline;
 }
 
 .start {
-	font-family: "Titillium Web", "Arial", Times, sans-serif;
+	font-family: Segoe UI Light, "Times New Roman", Times, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
-}
-
-#cover-credit:after{
-	content: "Babe Method";
+	margin: 15px 0;
 }
 
 /* ---------------------------------------------- /*
  * Servise
 /* ---------------------------------------------- */
 
+
+#how-it-works {
+	background-color: rgba(10, 255, 20, .4);
+	padding: 25px 5px 5px 5px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+    box-shadow: inset 0px 10px 50px -5px #333;
+}
+
+
 .iconbox {
 	background: #fff;
 	border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0px 10px 50px -5px #333;
 	text-align: center;
 	padding: 40px 20px;
 	margin: 0 0 20px;
@@ -459,36 +431,14 @@ textarea.form-control {
 	padding: 0;
 }
 
-.iconbox-desc {
-	color: black;
-}
-
-#catch{
-	background-image: url(../images/sample2-min.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-
-}
-
-
-.catch-overlay {
-	backgroundcol
-}
-
-
-.lighter-blox h3, h5{
-	color: white;
-}
+/* ---------------------------------------------- /*
+ * Skills
+/* ---------------------------------------------- */
 
 .chart {
     display: inline-block;
     height: 140px;
-    margin: 15px 0 15px 0;
+    margin: 50px 0;
     position: relative;
     text-align: center;
     width: 140px;
@@ -506,6 +456,7 @@ textarea.form-control {
     z-index: 2;
 }
 .percent:after {
+    content: "%";
     font-size: 50%;
     margin-left: 0.1em;
 }
@@ -523,7 +474,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #111;
+	background: #222;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
@@ -578,7 +529,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .header {
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid #f5f5f5;
 	position: relative;
 	width: 100%;
 	z-index: 998;
@@ -589,23 +540,21 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: "Titillium Web", sans-serif;
+	font-family: Segoe UI Light, sans-serif;
 }
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: rgba(0, 0, 0, .9);
+	background: #fff;
 	padding: 0;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 14px;
+	font-size: 11px;
 	letter-spacing: 3px;
-	color: #a7a4a4;
-	transition: .5s;
-	font-family: "Titillium Web", Arial;
+	color: #222;
 }
 
 .navbar-custom .nav li.active,
@@ -614,19 +563,18 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li.active a {
 	background: none;
 	outline: 0;
-	color: #cc2023;
-	font-weight: 600;
+	color: #228845;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-	font-family: "New Academy", Arial;
+    font-family: Segoe UI Light;
 }
 
 .navbar-custom .dropdown-menu {
 	border: 0;
-	border-top: 2px solid #E7746F;
+	border-top: 2px solid #228845;
 	border-radius: 0;
 }
 
@@ -653,14 +601,13 @@ textarea.form-control {
 	display: none;
 	z-index: 999;
 	bottom: 2em;
-	right: 2em;
+	left: 2em;
 }
 
 .scroll-up a {
 	background-color: rgba(135, 135, 135, 0.5);
 	display: block;
-	width: 35px;
-	height: 35px;
+	padding: 10px;
 	text-align: center;
 	color: #fff;
 	font-size: 15px;
@@ -670,7 +617,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #228845;
 }
 
 /* ---------------------------------------------- /*
@@ -681,6 +628,7 @@ textarea.form-control {
 	position: absolute;
 	left: 50%;
 	bottom: 40px;
+	border: 2px solid #fff;
 	border-radius: 50%;
 	height: 50px;
 	width: 50px;
@@ -694,13 +642,13 @@ textarea.form-control {
     position: relative;
     color: #fff;
     -webkit-animation-name: drop;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-delay: 0s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: running;
 	animation-name: drop;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
@@ -709,15 +657,13 @@ textarea.form-control {
 
 @-webkit-keyframes drop	{
 	0%   { top:0px;  opacity: 0;}
-	20%  { top:10px; opacity: 1;}
-	50% { top:25px; opacity: 0;}
+	30%  { top:10px; opacity: 1;}
 	100% { top:25px; opacity: 0;}
 }
 
 @keyframes drop	{
 	0%   { top:0px;  opacity: 0;}
-	20%  { top:10px; opacity: 1;}
-	50% { top:25px; opacity: 0;}
+	30%  { top:10px; opacity: 1;}
 	100% { top:25px; opacity: 0;}
 }
 
@@ -757,24 +703,8 @@ textarea.form-control {
 		text-align: center;
 	}
 
-	#home {
-		/*background: url(../images/viper-bg.png);*/
-	}
-
-	#cover-credit:after {
-		content: "Nguoi Mau";
-	}
-
-	.regForm{
-		margin: 0;
-	}
-
-	.regField{
-		width: 80%;
-	}
-
 	.intro{
-		padding: 50px 0 0 0;
+		width: 100%;
 	}
 
 }
@@ -821,7 +751,7 @@ textarea.form-control {
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
-	background: #3085a3;
+	background: #30aa50;
 	text-align: center;
 	cursor: pointer;
 }
@@ -830,6 +760,7 @@ textarea.form-control {
 	position: relative;
 	display: block;
 	min-height: auto;
+	width: 100%;
 	max-width: 100%;
 	opacity: 0.8;
 }
@@ -891,7 +822,15 @@ textarea.form-control {
 /*---------------*/
 
 figure.effect-bubba {
-	background: #9e5406;
+	top: 0px;
+	background: #228844;
+    box-shadow: 0px 10px 50px -5px #333;
+    transition: .3s;
+}
+
+figure.effect-bubba:hover {
+	top: 5px;
+    box-shadow: 0px 0px 5px -15px #000;
 }
 
 figure.effect-bubba img {
@@ -932,7 +871,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-	padding-top: 10%;
+	padding-top: 35%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -992,7 +931,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative;
+	position: relative; 
 	z-index: 100;
 	pointer-events: auto;
 	opacity: 1;
@@ -1010,7 +949,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtprogress {
 	position: absolute;
-	background: #FF5252;
+	background: #52FF77;
 	height: 1px;
 	width: 0%;
 	top: 0;
@@ -1033,7 +972,6 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator blockquote footer {
 	font-size: 1.2em;
-  color: #a7244F;
 }
 
 .cbp-qtrotator blockquote footer:before {
@@ -1046,7 +984,7 @@ figure.effect-bubba:hover p {
 }
 
 /* Example for media query */
-@media screen and (max-width: 30.6em) {
+@media screen and (max-width: 30.6em) { 
 
 	.cbp-qtrotator {
 		font-size: 70%;
@@ -1057,3 +995,4 @@ figure.effect-bubba:hover p {
 	}
 
 }
+
