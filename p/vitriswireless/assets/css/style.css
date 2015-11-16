@@ -1,6 +1,4 @@
-/*@import url(http://fonts.googleapis.com/css?family=Segoe UI Light:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 /*!
  * Vitris Theme is based off of Bootstrap + Clean v2.0.0 by Script Eden
@@ -8,7 +6,7 @@
 */
 
 body {
-	font: 300 14px/1.8 'Segoe UI Light', sans-serif;
+	font: 300 14px/1.8 'Open Sans', sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -68,7 +66,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Segoe UI Light, sans-serif;
+	font: 700 40px/1.2 Open Sans, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -174,7 +172,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Segoe UI Light, sans-serif;
+	font-family: Open Sans, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -275,7 +273,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Segoe UI Light, "Times New Roman", Times, sans-serif;
+	font-family: Open Sans, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -385,7 +383,7 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Segoe UI Light, "Times New Roman", Times, sans-serif;
+	font-family: Open Sans, "Times New Roman", Times, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
@@ -536,7 +534,7 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Segoe UI Light, sans-serif;
+	font-family: Open Sans, sans-serif;
 }
 
 .navbar-img {
@@ -569,7 +567,7 @@ textarea.form-control {
 .navbar-custom .navbar-brand {
 	font-weight: 700;
 	font-size: 22px;
-    font-family: Segoe UI Light;
+    font-family: Open Sans;
 }
 
 .navbar-custom .dropdown-menu {
@@ -707,10 +705,19 @@ textarea.form-control {
 		width: 100%;
 	}
 
+	.grid figure figcaption {
+		padding: 0;
+	}
+
+	#technician-spacing {
+		margin-top: -120px;
+	}
+
 	.navbar-img {
 		position: fixed;
 		max-height: 45px;
-		margin: -10px 0 0 40%;
+		top: 3px;
+		left: 40%;
 	}
 
 }
@@ -772,7 +779,6 @@ textarea.form-control {
 }
 
 .grid figure figcaption {
-	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
@@ -783,6 +789,10 @@ textarea.form-control {
 .grid figure figcaption::before,
 .grid figure figcaption::after {
 	pointer-events: none;
+}
+
+#technician-spacing{
+	margin-top: 10%;
 }
 
 .grid figure figcaption,
