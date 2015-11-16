@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="registerUser">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
     <script src="../assets/js/modernizr.custom.js"></script>
 
 </head>
-<body>
+<body ng-controller="mainCtrl">
 
 	<!-- Preloader -->
 
@@ -32,18 +32,27 @@
 	<!-- Home start -->
 
 	<section id="regPage" class="pfblock-image screen-height">
-        <div class="home-overlay"></div>
+        <div class="home-overlay" style="opacity: 0.2"></div>
 		<div class="intro">
-				<h2><rtitle class="newAca whiteText wow fadeInUp" data-wow-delay="1s">Sign Up</rtitle></h2>
-			<form class="regForm wow fadeInUp" data-wow-delay="1s" onsubmit="regNewUser()">
+				<h2><rtitle class="newAca whiteText wow fadeInUp" data-wow-delay="1s">#<rtitle>BOOST</rtitle><br>Promoter Registration</rtitle></h2>
+			<form class="regForm wow fadeInUp" data-wow-delay=".5s" onsubmit="registerNewUser()">
 				<br><br>
-				<input type="text" class="regField" /><br>
-				<input type="text" class="regField" /><br>
-				<input type="text" class="regField" /><br>
+				<input type="text" class="regField" placeholder="First Name" ng-model="firstName" required/><br>
+				<input type="text" class="regField" placeholder="Last Name" ng-model="lastName" required/><br>
+				<input type="email" class="regField" placeholder="E-mail" ng-model="email" required/><br>
+				<input type="password" class="regField" placeholder="Password" ng-model="password" required/><br>
+				<input type="password" class="regField" placeholder="Verify Password" ng-model="vPass" required/><br>
+
+				<input type="text" class="regField" placeholder="Instagram Name" ng-model="instagram" required/><br>
+				<select class="regField" ng-model="audience" required>
+    				<option value="" disabled selected>Account Type</option>
+					<option value="fitness">Fitness</option>
+					<option value="beauty">Beauty</option>
+				</select><br>
 				<div class="pfblock-line"></div>
-				<input type="checkbox" class="regCheck" />
+				<input type="checkbox" class="regCheck" ng-model="termsChecked"/>
 				<span class="subtleText">
-					By checking this box you're agreeing to our terms and conditions
+					By checking this box you're agreeing to our <u><a href="#" onclick="toggleTerms()">terms and conditions</a></u>
 				</span>
 				<br>
 				<button class="btn btn-default btn-lg" type="submit"> Register </button>
@@ -54,6 +63,99 @@
 		</div>
 	</section>
 
+	<div class="terms-popup" id="termsWindow">
+		<h3>Terms and Conditions : Model's Employment Contract</h3>
+		<div class="terms-container" id="termsCopy">
+			<b>{{user.firstName}} {{user.lastName}}</b> (hereafter "Model") and #Boost, Inc./hashtagboost.com 
+
+(hereafter "#Boost") hereby enter into an agreement to the terms below:
+<br>
+Company hereby engages Model to participate in its proprietary platform where he or she may 
+
+accept service requests for social media engagement by individuals and businesses in 
+
+exchange for a fee. Such social media engagement may include an Instagram message, 
+
+posting on a social media wall, doing a “shout out,” wearing a product and sending a selfie or 
+
+picture of yourself wearing the product (for example, a T-shirt, hat or piece of jewelry) or similar 
+
+services. Model warrants that Model is not now bound by any other contract for similar services, 
+
+or is not subject to any restriction or non-compete obligation precluding he or she from 
+
+participating in such services, and that Model will not enter into such a contract with any other 
+
+company or service provider during the term of this agreement that is similar to the services of 
+
+#Boost. Model agrees to refer all requests for the model to participate in these types of social 
+
+media services to Company and not to compete with #Boost with a similar product or service, or 
+
+facilitate a third party in doing so, for a period of 2 years after termination of the relationship 
+
+between Model and #Boost.
+<br>
+Model must have authentic Instagram followers in the amount he or she represents when 
+
+accepting a job. If at any time, #Boost is unable to authenticate followers, it has the right to 
+
+withhold or terminate payments and the Model’s account.
+<br>
+Model must complete any job within 48 hours of accepting. The job must be posted for the
+
+period agreed to in the job description that was accepted. The post and tagging must be 
+
+positive, supportive and promoting the person or business requesting #Boost service (buyer). 
+
+Model must tag that buyer in the photo.
+<br>
+If the job is not completed timely, Model forfeits payment and/or the job can be re-offered to 
+
+another Model. If Model does not complete more than one job in a timely fashion, #Boost 
+
+reserves the right to terminate the Model’s account or suspend eligibility to accept jobs for 30 
+
+jobs.
+<br>
+Company agrees to pay Model 45% of all gross revenues that Model may generate through the 
+
+platform in return for services provided to Company’s customers. This money will be paid within 
+
+15 days following payment by the customer and providing the services by Model, whichever is 
+
+later.
+<br>
+Company also agrees to additionally pay model 4% of gross revenues for the three jobs 
+
+following a job where Model posts #Boost’s image and tags #Boost’s Instagram account, 
+
+captioning it with a positive comment about #Boost service and adding the URL 
+
+<a href="http://hashtagboost.com">www.HashtagBoost.com</a>. Model can do this as many times he or she desires, but only 4% can 
+
+be earned for any particular job (they cannot be stacked or combined).
+<br>
+Either party may terminate this agreement at any time for any reason but any earned payments 
+
+will still be due and payable.
+<br>
+Company and its customers are hereby authorized to use Model's name, likeness, description, 
+
+biographical information, and any other information available to deliver and promote company’s 
+
+services. Company does provide certain information its participant database to sponsors, 
+
+advertisers and other third parties.
+<br>
+The laws of New York shall govern this agreement and any disputes arising from either party's 
+
+performance.
+		</div>
+		<span class="close-terms" onClick=""><a href="#" onclick="toggleTerms()">Close</a></span>
+	</div>
+
+
 	<!-- Footer start -->
 
 	<footer id="footer">
@@ -63,10 +165,10 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="https://www.facebook.com/Hashtagboost-422789167928318/timeline/" class="wow fadeInUp" target="_blank" data-wow-delay="1s"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/hashtagboost" class="wow fadeInUp" target="_blank" data-wow-delay="1.2s"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://instagram.com/hashtagboost/" class="wow fadeInUp" target="_blank" data-wow-delay="1.4s"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joshcohen@hashtagboost.com" class="wow fadeInUp" target="_blank" data-wow-delay="1.8s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://www.facebook.com/Hashtagboost-422789167928318/timeline/" class="wow fadeInUp" target="_blank" data-wow-delay="0s"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/hashtagboost" class="wow fadeInUp" target="_blank" data-wow-delay="0.2s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://instagram.com/hashtagboost/" class="wow fadeInUp" target="_blank" data-wow-delay="0.4s"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joshcohen@hashtagboost.com" class="wow fadeInUp" target="_blank" data-wow-delay="0.6s"><i class="fa fa-envelope"></i></a></li>
 					</ul>
                     <p class="copyright">
                         © 2015 HashtagBoost.com | Created in part by CrystalFruit Digital Solutions
@@ -93,14 +195,14 @@
 	<script src="../assets/js/jquery-1.11.1.min.js"></script>
 	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="../assets/js/angular.min.js"></script>
 	<script src="../assets/js/imagesloaded.pkgd.js"></script>
 	<script src="../assets/js/jquery.sticky.js"></script>
 	<script src="../assets/js/smoothscroll.js"></script>
 	<script src="../assets/js/wow.min.js"></script>
-    <script src="../assets/js/jquery.easypiechart.js"></script>
     <script src="../assets/js/waypoints.min.js"></script>
-    <script src="../assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="../assets/js/custom.js"></script>
+	<script src="../assets/js/reg.js"></script>
 
 </body>
 </html>

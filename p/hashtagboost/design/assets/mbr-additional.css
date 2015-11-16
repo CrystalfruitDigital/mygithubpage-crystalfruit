@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+
+
+
+
+
+#menu-5 A {
+	color: #c1c1c1 !important;
+}
+#header1-1 H1 {
+	font-family: 'Titillium Web', sans-serif !important;
+	color: #b8312f !important;
+}
+#header1-1 P {
+	font-family: 'Montserrat', sans-serif !important;
+	font-size: 100px !important;
+}
+#msg-box2-7 H2 {
+	color: #252525 !important;
+}
+#msg-box2-6 H2 {
+	color: #ffffff !important;
+}
+#msg-box4-6 H2 {
+	color: #ab0000 !important;
+	font-size: 48px !important;
+}
+#msg-box4-6 P {
+	color: #000000 !important;
+	font-size: 20px !important;
+}
+#msg-box4-6 DIV {
+	font-size: 23px !important;
+	font-family: 'Titillium Web', sans-serif !important;
+}
+#msg-box2-8 H2 {
+	font-family: 'Titillium Web', sans-serif !important;
+	color: #b8312f !important;
+}
+#msg-box2-10 H2 {
+	color: #00828c !important;
+}
+#msg-box4-14 P {
+	color: #252525 !important;
+	font-size: 25px !important;
+	font-family: 'Roboto', sans-serif !important;
+}
+#header1-16 H1 {
+	color: #3e829b !important;
+	font-family: 'Titillium Web', sans-serif !important;
+}
