@@ -6,7 +6,7 @@
 */
 
 body {
-	font: 300 14px/1.8 'Open Sans', sans-serif;
+	font: 300 14px/1.8 'Open Sans', Segoe UI Light,sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -66,7 +66,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Open Sans, sans-serif;
+	font: 700 40px/1.2 Open Sans, Segoe UI Light,sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -172,7 +172,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Open Sans, sans-serif;
+	font-family: Open Sans, Segoe UI Light,sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -273,7 +273,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Open Sans, "Times New Roman", Times, sans-serif;
+	font-family: Open Sans, Segoe UI Light,sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -395,7 +395,7 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Open Sans, "Times New Roman", Times, sans-serif;
+	font-family: Open Sans, Segoe UI Light,sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
@@ -546,10 +546,7 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Open Sans, sans-serif;
-	-webkit-box-shadow: 0 6px 10px -3px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 6px 10px -3px rgba(0,0,0,.1);
-	box-shadow: 0 6px 10px -3px rgba(0,0,0,.1);
+	font-family: Open Sans, Segoe UI Light,sans-serif;
 }
 
 .navbar-img {
@@ -747,7 +744,6 @@ textarea.form-control {
 		position: fixed;
 		max-height: 45px;
 		top: 13px;
-		left: 40%;
 	}
 
 }
