@@ -528,9 +528,6 @@ textarea.form-control {
 	position: relative;
 	width: 100%;
 	z-index: 998;
-	-webkit-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
-	box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
 }
 
 .navbar-custom {
@@ -734,11 +731,8 @@ textarea.form-control {
 
 	.navbar-img {
 		position: fixed;
-		max-height: 52px;
-		top: 9px;
-		-webkit-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
-		-moz-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
-		box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
+		max-height: 45px;
+		top: 13px;
 	}
 
 }
