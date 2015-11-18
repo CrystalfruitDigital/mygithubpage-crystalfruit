@@ -20,12 +20,12 @@ var hidden = 0;
 
 $(".hide-sidebar").click(function(){
 	if(!hidden){
-		$(".sidebar").hide("fast");
+		$(".sidebar").hide();
 		$(".hide-sidebar").text(">");
 		$(".map-div").width("100%");
 		hidden = 1;
 	} else {
-		$(".sidebar").show("fast");
+		$(".sidebar").show();
 		$(".hide-sidebar").text("<");
 		$(".map-div").width("70%");
 		hidden = 0;

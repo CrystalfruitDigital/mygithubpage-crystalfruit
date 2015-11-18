@@ -231,10 +231,7 @@ textarea.form-control {
 }
 
 .pfblock-vitris {
-	background: -webkit-linear-gradient(#fff, #efe); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#fff, #efe); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#fff, #efe); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#fff, #efe); /* Standard syntax */
+	background: #e5ffe5;
 }
 
 .pfblock-image {
@@ -528,6 +525,9 @@ textarea.form-control {
 	position: relative;
 	width: 100%;
 	z-index: 998;
+	-webkit-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
+	box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
 }
 
 .navbar-custom {
@@ -731,8 +731,11 @@ textarea.form-control {
 
 	.navbar-img {
 		position: fixed;
-		max-height: 45px;
-		top: 13px;
+		max-height: 52px;
+		top: 9px;
+		-webkit-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
+		-moz-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
+		box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
 	}
 
 }
