@@ -6,7 +6,7 @@
 */
 
 body {
-	font: 300 14px/1.8 'Open Sans', Segoe UI Light,sans-serif;
+	font: 300 14px/1.8 'Open Sans', sans-serif;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -66,7 +66,7 @@ a,
 /* ---------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Open Sans, Segoe UI Light,sans-serif;
+	font: 700 40px/1.2 Open Sans, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
@@ -172,7 +172,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Open Sans, Segoe UI Light,sans-serif;
+	font-family: Open Sans, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -230,11 +230,8 @@ textarea.form-control {
 	padding: 120px 0 100px;
 }
 
-.pfblock-vitris {
-	background: -webkit-linear-gradient(#fff, #efe); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#fff, #efe); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#fff, #efe); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#fff, #efe); /* Standard syntax */
+.pfblock-gray {
+	background: #f5f5f5;
 }
 
 .pfblock-image {
@@ -276,7 +273,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Open Sans, Segoe UI Light,sans-serif;
+	font-family: Open Sans, "Times New Roman", Times, sans-serif;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -338,18 +335,6 @@ textarea.form-control {
 	margin-bottom: 40px;
 }
 
-#contact {
-	background: url(../images/contact.jpg);
-	background-color: #fff;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 100%;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-}
-
 /* ---------------------------------------------- /*
  * Home
 /* ---------------------------------------------- */
@@ -381,9 +366,9 @@ textarea.form-control {
 
 .intro {
 	position: absolute;
-	width: 37%;
+	width: 50%;
 	top: 50%;
-	left: 3%;
+	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
@@ -398,7 +383,7 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Open Sans, Segoe UI Light,sans-serif;
+	font-family: Open Sans, "Times New Roman", Times, sans-serif;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
@@ -411,7 +396,7 @@ textarea.form-control {
 
 
 #how-it-works {
-	background-color: #33ba44;
+	background-color: rgba(10, 255, 20, .4);
 	padding: 25px 5px 5px 5px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -420,26 +405,17 @@ textarea.form-control {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
-    box-shadow: inset 0px 10px 30px -5px rgba(0,0,0,.3);
+    box-shadow: inset 0px 10px 50px -5px #333;
 }
 
 
 .iconbox {
 	background: #fff;
 	border-bottom: 1px solid #d4d4d4;
-    box-shadow: 0px 10px 50px -13px rgba(0,0,0,.5);
+    box-shadow: 0px 10px 50px -5px #333;
 	text-align: center;
 	padding: 40px 20px;
-	margin: 0px 0 20px;
-	transition: .2s;
-}
-
-.iconbox:hover {
-	cursor: pointer;
-	background: #efe;
-	border-bottom: 1px solid #d4d4d4;
-    box-shadow: 0px 5px 40px -8px #000;
-	margin: 5px 0 15px;
+	margin: 0 0 20px;
 }
 
 .iconbox-icon {
@@ -451,6 +427,36 @@ textarea.form-control {
 .iconbox-title {
 	margin: 0 0 15px;
 	padding: 0;
+}
+
+/* ---------------------------------------------- /*
+ * Skills
+/* ---------------------------------------------- */
+
+.chart {
+    display: inline-block;
+    height: 140px;
+    margin: 50px 0;
+    position: relative;
+    text-align: center;
+    width: 140px;
+}
+.chart canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.percent {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 140px;
+    z-index: 2;
+}
+.percent:after {
+    content: "%";
+    font-size: 50%;
+    margin-left: 0.1em;
 }
 
 /* ---------------------------------------------- /*
@@ -466,10 +472,10 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #fff;
+	background: #222;
 	text-align: center;
 	padding: 40px 0;
-	color: #222;
+	color: #FFF;
 }
 
 .copyright {
@@ -499,24 +505,17 @@ textarea.form-control {
 	display: block;
 	line-height: 35px;
 	text-align: center;
-	border: 1px solid rgba(0, 0, 0, .4);
+	border: 1px solid rgba(255, 255, 255, .1);
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color: rgba(0, 0, 0, .5);
-	-webkit-box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
-	box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
-	transition: all .5s;
+	color: rgba(255, 255, 255, .2);
 }
 
 .social-links a:hover {
-	border: 1px solid #52ee77;
-	color: rgba(0, 0, 0, .9);
-	-webkit-box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
-	-moz-box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
-	box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
+	border: 1px solid rgba(255, 255, 255, .5);
+	color: rgba(255, 255, 255, .8);
 }
 
 /* ---------------------------------------------- /*
@@ -528,9 +527,6 @@ textarea.form-control {
 	position: relative;
 	width: 100%;
 	z-index: 998;
-	-webkit-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
-	-moz-box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
-	box-shadow: 0 16px 16px -16px rgba(0,0,0,.1);
 }
 
 .navbar-custom {
@@ -538,19 +534,11 @@ textarea.form-control {
 	border-radius: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: Open Sans, Segoe UI Light,sans-serif;
+	font-family: Open Sans, sans-serif;
 }
 
 .navbar-img {
 	max-height: 80px;
-	margin-top: -10px;
-	padding: 5px;
-	background-color: white;
-	border-radius: 5px;
-
-	-webkit-box-shadow: 0 16px 16px -12px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 16px 16px -12px rgba(0,0,0,.2);
-	box-shadow: 0 16px 16px -12px rgba(0,0,0,.2);
 }
 
 .navbar-custom,
@@ -564,7 +552,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 11px;
 	letter-spacing: 3px;
-	color: #222;
+	color: #274;
 	transition: .2s;
 }
 
@@ -580,7 +568,7 @@ textarea.form-control {
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 20px;
     font-family: Open Sans;
 }
 
@@ -715,12 +703,7 @@ textarea.form-control {
 		text-align: center;
 	}
 
-	.scroll-up {
-		opacity: 0;
-	}
-
 	.intro{
-		left: 0;
 		width: 100%;
 	}
 
@@ -734,11 +717,9 @@ textarea.form-control {
 
 	.navbar-img {
 		position: fixed;
-		max-height: 52px;
-		top: 9px;
-		-webkit-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
-		-moz-box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
-		box-shadow: 0 16px 16px -12px rgba(0,0,0,0);
+		max-height: 45px;
+		top: 3px;
+		left: 40%;
 	}
 
 }
@@ -872,14 +853,12 @@ figure.effect-bubba:hover {
 
 figure.effect-bubba img {
 	opacity: 0.7;
-	-webkit-transition: 0.35s;
-	transition: 0.35s;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
 }
 
 figure.effect-bubba:hover img {
 	opacity: 0.4;
-	-webkit-transition: 0.35s;
-	transition: 0.35s;
 }
 
 figure.effect-bubba figcaption::before,
@@ -910,6 +889,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
+	padding-top: 35%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -936,8 +916,8 @@ figure.effect-bubba:hover figcaption::after {
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,10px,0);
-	transform: translate3d(0,10px,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
 
 /*-----------------------*/
@@ -987,11 +967,11 @@ figure.effect-bubba:hover p {
 
 .cbp-qtprogress {
 	position: absolute;
-	background: #52aa77;
+	background: #52FF77;
 	height: 1px;
 	width: 0%;
 	top: 0;
-	z-index: 997;
+	z-index: 1000;
 }
 
 .cbp-qtrotator blockquote {
