@@ -230,8 +230,11 @@ textarea.form-control {
 	padding: 120px 0 100px;
 }
 
-.pfblock-gray {
-	background: #f5f5f5;
+.pfblock-vitris {
+	background: -webkit-linear-gradient(#fff, #efe); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#fff, #efe); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#fff, #efe); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#fff, #efe); /* Standard syntax */
 }
 
 .pfblock-image {
@@ -427,7 +430,16 @@ textarea.form-control {
     box-shadow: 0px 10px 50px -13px rgba(0,0,0,.5);
 	text-align: center;
 	padding: 40px 20px;
-	margin: 0 0 20px;
+	margin: 0px 0 20px;
+	transition: .2s;
+}
+
+.iconbox:hover {
+	cursor: pointer;
+	background: #efe;
+	border-bottom: 1px solid #d4d4d4;
+    box-shadow: 0px 5px 40px -8px #000;
+	margin: 5px 0 15px;
 }
 
 .iconbox-icon {
@@ -439,36 +451,6 @@ textarea.form-control {
 .iconbox-title {
 	margin: 0 0 15px;
 	padding: 0;
-}
-
-/* ---------------------------------------------- /*
- * Skills
-/* ---------------------------------------------- */
-
-.chart {
-    display: inline-block;
-    height: 140px;
-    margin: 50px 0;
-    position: relative;
-    text-align: center;
-    width: 140px;
-}
-.chart canvas {
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-.percent {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 140px;
-    z-index: 2;
-}
-.percent:after {
-    content: "%";
-    font-size: 50%;
-    margin-left: 0.1em;
 }
 
 /* ---------------------------------------------- /*
@@ -484,10 +466,10 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #222;
+	background: #fff;
 	text-align: center;
 	padding: 40px 0;
-	color: #FFF;
+	color: #222;
 }
 
 .copyright {
@@ -517,17 +499,24 @@ textarea.form-control {
 	display: block;
 	line-height: 35px;
 	text-align: center;
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 1px solid rgba(0, 0, 0, .4);
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
 			border-radius: 3px;
 	font-size: 14px;
-	color: rgba(255, 255, 255, .2);
+	color: rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
+	box-shadow: 0 0px 6px -1px rgba(0,0,0,.1);
+	transition: all .5s;
 }
 
 .social-links a:hover {
-	border: 1px solid rgba(255, 255, 255, .5);
-	color: rgba(255, 255, 255, .8);
+	border: 1px solid #52ee77;
+	color: rgba(0, 0, 0, .9);
+	-webkit-box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
+	-moz-box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
+	box-shadow: inset 0 10px 16px -1px rgba(0,140,0,.3);
 }
 
 /* ---------------------------------------------- /*
@@ -877,12 +866,14 @@ figure.effect-bubba:hover {
 
 figure.effect-bubba img {
 	opacity: 0.7;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+	-webkit-transition: 0.35s;
+	transition: 0.35s;
 }
 
 figure.effect-bubba:hover img {
 	opacity: 0.4;
+	-webkit-transition: 0.35s;
+	transition: 0.35s;
 }
 
 figure.effect-bubba figcaption::before,
@@ -913,7 +904,6 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-	padding-top: 35%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -940,8 +930,8 @@ figure.effect-bubba:hover figcaption::after {
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
 }
 
 /*-----------------------*/
