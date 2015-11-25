@@ -17,8 +17,6 @@
     
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-    
-    <script src="assets/js/modernizr.custom.js"></script>
        
 </head>
 <body>
@@ -43,47 +41,29 @@
 				<button class="btn btn-success" onclick="alert('Will go to your location')">Find a technician near me!</button>
 				<hr>
 				<div class="sidebar-info">
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
-					Info<br>
+					<h1>Name</h1>
+					<p></p>
 				</div>
 			</div>
 
-			<div class="hide-sidebar">
+			<!-- <div class="hide-sidebar">
 				<
-			</div>
+			</div> -->
 			<div class="mobile-info-toggle">
 				Show all
 			</div>
 		</div>
 
 		<div class="map-div">
-			<iframe class="map" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/view?zoom=9&center=40.4108%2C-75.2479&key=AIzaSyDeoOQHJmbsq50LckYsULDQuaXrtjZgJ5M" allowfullscreen></iframe>
+    		<div id="map" class="map"></div>
 		</div>
 	</div>
 
 	<!-- Javascript files -->
 
 	<script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqdp8yu8cMYtiHpD80bSLqNqIF02UtyT0&signed_in=true&callback=initMap"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 
