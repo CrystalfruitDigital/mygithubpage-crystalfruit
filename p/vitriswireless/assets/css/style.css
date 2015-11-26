@@ -378,7 +378,7 @@ textarea.form-control {
 
 .intro {
 	position: absolute;
-	width: 37%;
+	width: 45%;
 	top: 50%;
 	left: 3%;
 	text-align: center;
@@ -561,7 +561,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 11px;
 	letter-spacing: 3px;
-	color: #222;
+	color: #274;
 	transition: .2s;
 }
 
@@ -706,7 +706,20 @@ textarea.form-control {
  * Media
 /* ---------------------------------------------- */
 
-@media (max-width: 767px) {
+@media (max-width: 967px) {
+
+	#home {
+		background: url(../images/cover-sm.jpg);
+		background-color: #222;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+			 -o-background-size: cover;
+				background-size: cover;
+		padding: 0;
+	}
 
 	.calltoaction {
 		text-align: center;

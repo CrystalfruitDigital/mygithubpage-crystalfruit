@@ -699,6 +699,19 @@ textarea.form-control {
 
 @media (max-width: 767px) {
 
+	#home {
+		background: url(../images/cover-sm.jpg);
+		background-color: #222;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+			 -o-background-size: cover;
+				background-size: cover;
+		padding: 0;
+	}
+
 	.calltoaction {
 		text-align: center;
 	}
