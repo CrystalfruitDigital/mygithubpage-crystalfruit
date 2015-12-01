@@ -6,8 +6,8 @@
 */
 
 body {
-	font: 300 14px/1.8 'Open Sans', Segoe UI Light,sans-serif;
-	color: #666;
+	font: 600 15px/1.8 'Open Sans', Segoe UI Light,sans-serif;
+	color: #333;
 	overflow-x: hidden;
 }
 
@@ -352,7 +352,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/cover-old.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -378,7 +378,7 @@ textarea.form-control {
 
 .intro {
 	position: absolute;
-	width: 45%;
+	width: 35%;
 	top: 50%;
 	left: 3%;
 	text-align: center;
@@ -388,6 +388,20 @@ textarea.form-control {
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
 	padding: 15px;
+}
+
+.intro ul {
+	text-align: left;
+	-webkit-transform: translate(35%, 0%);
+	   -moz-transform: translate(35%, 0%);
+		-ms-transform: translate(35%, 0%);
+		 -o-transform: translate(35%, 0%);
+			transform: translate(35%, 0%);
+}
+
+.intro li {
+	margin-left: -30px;
+	list-style: inside;
 }
 
 .intro h1{
@@ -448,6 +462,9 @@ textarea.form-control {
 .iconbox-title {
 	margin: 0 0 15px;
 	padding: 0;
+	color: #000;
+	font-weight: 600;
+	font-size: 18px;
 }
 
 /* ---------------------------------------------- /*
@@ -576,9 +593,9 @@ textarea.form-control {
 }
 
 .navbar-custom .navbar-brand {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 22px;
-    font-family: Open Sans;
+    font-family: Open Sans, Segoe UI Light;
 }
 
 .navbar-custom .dropdown-menu {

@@ -45,6 +45,7 @@ html, body {
 }
 
 .floatbutton {
+  cursor: pointer;
   margin: 10px;
   border-radius: 27px;
   border: 0;
@@ -63,7 +64,16 @@ html, body {
   -webkit-box-shadow:0 15px 40px -11px rgba(100, 100, 255, 1); 
   -moz-box-shadow: 0 15px 40px -11px rgba(100, 100, 255, 1); 
   box-shadow:0 15px 40px -11px rgba(100, 100, 255, 1);
+  transition: .2s;
 }
+
+.btn-blue:hover {
+  background-color: #69f;
+  -webkit-box-shadow:0 15px 20px -12px rgba(0, 100, 255, 1); 
+  -moz-box-shadow: 0 15px 20px -12px rgba(0, 100, 255, 1); 
+  box-shadow:0 15px 20px -12px rgba(0, 100, 255, 1);
+}
+
 .btn-grn {
   background-color: #22cc11;
   -webkit-box-shadow:0 15px 45px -8px rgba(100, 255, 100, 1); 
