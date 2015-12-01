@@ -101,6 +101,10 @@ h6 {
 	font-weight: 400;
 }
 
+.brands {
+	max-height: 100px;
+}
+
 /* ---------------------------------------------- /*
  * Reset border-radius
 /* ---------------------------------------------- */
@@ -118,6 +122,17 @@ h6 {
 			border-radius: 3px;
 }
 
+
+.separator {
+	padding: 20px;
+	width: 100%;
+	background-color: white;
+}
+.separator-under {
+	padding: 5px;
+	width: 100%;
+	background-color: #efefff;
+}
 
 /* ---------------------------------------------- /*
  * Input-group
@@ -231,7 +246,7 @@ textarea.form-control {
 }
 
 .pfblock-vitris {
-	background: #e5ffe5;
+	background: #f5fff5;
 }
 
 .pfblock-image {
@@ -421,7 +436,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 
-#how-it-works {
+/*#how-it-works {
 	background-color: #33ba44;
 	padding: 25px 5px 5px 5px;
 	background-attachment: fixed;
@@ -432,8 +447,20 @@ textarea.form-control {
 		 -o-background-size: cover;
 			background-size: cover;
     box-shadow: inset 0px 10px 30px -5px rgba(0,0,0,.3);
-}
+}*/
 
+#how-it-works {
+	padding: 50px;
+	background: url(../images/cover.jpg);
+	background-color: #222;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
 
 .iconbox {
 	background: #fff;
