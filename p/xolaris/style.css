@@ -1,0 +1,123 @@
+html, body {
+	margin: 0 10% 0 10%;
+	padding: 0;
+	color: #555;
+	font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Palatino Linotype;
+}
+
+/* TOP BAR STYLES */
+.top-bar, .search-bar, .logo-bar {
+	width: 100%;
+	min-height: 40px;
+}
+
+/* SEARCH BAR + SOCIAL LINKS */
+
+	.search-bar {
+		height: auto;
+		padding: 15px;
+	}
+
+	.search-bar input {
+		float: right;
+		margin-right: 30px;
+		margin-top: 25px;
+	}
+
+	.search-bar img {
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+		max-width: 30px;
+	}
+
+/* LOGO BAR */
+
+	.logo-bar {
+
+	}
+
+	.logo-bar img {
+		position: absolute;
+		left: 5%;
+		transform: translateY(-40%);
+	}
+
+	.give-now-call {
+		position: absolute;
+		right: 5%;
+		color: white;
+		margin: 10px;
+		padding: 15px 5px 5px 5px;
+		width: 54px;
+		height: 44px;
+		text-align: center;
+		border-radius: 50%;
+		background-color: red;
+		box-shadow: 0px 1px 20px -5px rgba(0,0,0,.5);
+	}
+
+	/* NAVIGATION */
+
+		.navigation {
+			text-align: center;
+			margin-top: 60px;
+			font-weight: 800;
+			font-size: 16pt;
+			font-family: Palatino Linotype;
+		}
+
+/* MAIN SLIDESHOW */
+
+	.slideshow {
+		background: url(./images/splash_1.png);
+		background-size: cover;
+		background-position: center;
+		min-height: 491px;
+		padding: 50px;
+		margin-top: 40px;
+	}
+
+	.ss-box {
+		background-color: rgba(255, 255, 255, .8);
+		width: 30%;
+		padding-top: 10px;
+		text-align: center;
+	}
+
+	.box-title {
+		background-color: red;
+		color: white;
+		width: 100%;
+		font-size: 16pt;
+	}
+
+	.box-content {
+		padding: 10px;
+	}
+
+	.box-content h3 {
+		font-size: 250%;
+		margin: 0;
+	}
+
+	.box-content h4 {
+		font-size: 150%;
+		margin: 0;
+	}
+
+	.help-call {
+		margin-left: 37%;
+		color: white;
+		padding: 25px 5px 5px 5px;
+		width: 54px;
+		height: 34px;
+		text-align: center;
+		border-radius: 50%;
+		background-color: red;
+		box-shadow: 0px 1px 20px -5px rgba(0,0,0,.5);
+	}
