@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app ="rateStore">
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0" >
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/map_style.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+    <link rel="stylesheet" type="text/css" href="css/main_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/issue_menu.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    
+    
+
+  </head>
+  <body>
+    
+    <div id="map">
+      
+    </div>
+    <div id ="menu" ng-controller = "rateStoreController" ng-init="show= false" >
+      <img  id = "main-logo" src="http://crystalfruitdigital.github.io/mygithubpage-crystalfruit/p/vitriswireless/assets/images/logo-trans.png" alt="">
+      <div id="main-menu" ng-class = "class1">
+        <p id = "text-device">Choose Your Device</p>
+        <div class ="line"></div>
+        <div id = "apple" class = "phone-tab" ng-click = "changeTab2()"><img src="http://cdn.osxdaily.com/wp-content/uploads/2010/10/giant-apple-logo-bw.png" alt=""></div>
+        <div id= "sam" class = "phone-tab" ng-click = "changeTab2()"><img src="http://www.iconsdb.com/icons/preview/black/samsung-xxl.png" alt=""></div>
+        <div id = "lg" class = "phone-tab" ng-click = "changeTab2()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/LG_Logo.svg/1000px-LG_Logo.svg.png" alt=""></div>
+        <div id = "and" class = "phone-tab" ng-click = "changeTab2()"><img src="http://www.masonbruce.com/wp-content/uploads/2015/03/android-logo-transparent-background.png" alt=""></div>
+      </div>
+
+
+      <div id="issue-menu" ng-class = "class2" ng-if="show" >
+        <p id= "issue-text" >Choose your issues</p>
+        <div id="issue-line"></div>
+        
+        <div id="issue-box"">
+            
+                <div class="checkbox ">
+                  <label><input type="checkbox" ng-click = "toggleSelection(0)" >Cracked Glass Replacement & Repair <span class = "rate-span">$10-20</span></label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-click = "toggleSelection(1)">Home Button Replacement & Repair <span class = "rate-span">$100-200</span></label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-click = "toggleSelection(2)">Power Button Replacement & Repair <span class = "rate-span">$10-20</span></label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-click = "toggleSelection(3)">Water Damaged Phone Repair <span class = "rate-span">$10-20</span></label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-click = "toggleSelection(4)">USB Port Replacement & Repair <span class = "rate-span">$10-20</span></label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" ng-click = "toggleSelection(5)">Headphone Jack Replacement & Repair <span class = "rate-span">$10-20</span></label>
+                </div>
+            
+            </div>
+            
+
+            <div id="rate-block">
+              <div id="long-line1"></div>
+              <div id="long-line2"></div>
+              <p id ="rate-text">Total</p>
+              <div id="rate-number">
+                <span>$</span>
+                <span  ng-model = "lower">&nbsp{{lower}}</span>
+                <span >-</span>
+                <span  ng-model = "higher">{{higher}}</span>
+              </div>
+            </div>
+            <button class = "back btn btn-success" ng-click ="changeTab1()" >back</button>
+        </div>
+
+      
+    </div>
+
+
+    
+        
+<script src="./js/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQkrgeEEgtb-t4UclOlbqvwfGZELV6Ae4&signed_in=true&callback=initMap"></script>
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/rate_adding.js"></script>
+     
+
+    
+  </body>
+</html>

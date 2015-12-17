@@ -1,0 +1,97 @@
+#issue-menu{
+	bottom: 50px;
+	position: absolute;
+
+	width: 500px;
+	height: 90%
+}
+#issue-text{
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 200px;
+	left: 95px;
+	font-size: 20px;
+	
+ 	
+}
+
+#issue-line{
+	position: absolute;
+	top: 230px;
+	left: 75px;
+	height: 2px;
+	width: 200px;
+	background-color: white;
+	opacity: 0.5;
+}
+#issue-box{
+	height: 100px;
+	width: 500px;
+	position: absolute;
+	left: 30px;
+	top: 280px;
+	color:white;
+
+}
+
+.rate-span{
+	margin-left: 10px;
+}
+
+
+
+#rate-text{
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 430px;
+	left: 145px;
+	font-size: 35px;
+	margin-top: 30px;
+	
+}
+
+#long-line1{
+	width: 180px;
+	margin-left: 85px;
+	margin-top: -5px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	top:450px;
+	right: 100px;
+	margin-top: 35px;
+
+}
+
+#long-line2{
+	width: 180px;
+	margin-left: 85px;
+	margin-top: -5px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	top:450px;
+	right: 360px;
+	margin-top: 35px;
+}
+
+#rate-number{
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	position: absolute;
+	top: 540px;
+	left: 65px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+.numbers{
+	width: 0px;
+}
+
+
