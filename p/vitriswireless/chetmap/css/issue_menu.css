@@ -2,7 +2,7 @@
 	bottom: 50px;
 	position: absolute;
 
-	width: 500px;
+	width: 300px;
 	height: 90%
 }
 #issue-text{
@@ -27,8 +27,8 @@
 	opacity: 0.5;
 }
 #issue-box{
-	height: 100px;
-	width: 500px;
+	height:80px;
+	width: 350px;
 	position: absolute;
 	left: 30px;
 	top: 280px;
@@ -37,7 +37,7 @@
 }
 
 .rate-span{
-	margin-left: 10px;
+	margin-left: 0px;
 }
 
 
@@ -47,8 +47,8 @@
 	color: white;
 	text-align: center;
 	position: absolute;
-	top: 430px;
-	left: 145px;
+	top: 475px;
+	left: 135px;
 	font-size: 35px;
 	margin-top: 30px;
 	
@@ -61,21 +61,21 @@
 	height: 2px;
 	background-color: white;
 	position: absolute;
-	top:450px;
-	right: 100px;
+	top:500px;
+	left: 135px;
 	margin-top: 35px;
 
 }
 
 #long-line2{
-	width: 180px;
+	width: 120px;
 	margin-left: 85px;
 	margin-top: -5px;
 	height: 2px;
 	background-color: white;
 	position: absolute;
-	top:450px;
-	right: 360px;
+	top:500px;
+	right: 180px;
 	margin-top: 35px;
 }
 
@@ -83,7 +83,7 @@
 	font-family: Open Sans, Segoe UI Light,sans-seri;
 	position: absolute;
 	top: 540px;
-	left: 65px;
+	left: 50px;
 	color: white;
 	text-align: center;
 	font-size: 50px;

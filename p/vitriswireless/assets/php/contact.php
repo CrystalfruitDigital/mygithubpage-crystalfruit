@@ -7,8 +7,8 @@ if(isset($_POST['message'])){
 	$message = $_POST['message'];
     
 	
-	$to      = 'you@example.com';
-	$subject = 'Site Contact Form';
+	$to      = 'hello@jnguyen.space';
+	$subject = 'Hi Vitris!';
 
 	$headers = 'From: '. $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
@@ -20,10 +20,10 @@ if(isset($_POST['message'])){
 		$res['sendstatus'] = 'done';
 	
 		//Edit your message here
-		$res['message'] = 'Form Submission Successful';
+		$res['message'] = 'Form Submission Successful!';
     }
 	else{
-		$res['message'] = 'Failed to send mail. Please mail me to you@example.com';
+		$res['message'] = 'Failed to send mail. Please e-mail hello@vitriswireless.com through your e-mail provider directly!';
 	}
 	
 	

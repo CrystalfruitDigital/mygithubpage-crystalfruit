@@ -37,7 +37,7 @@ var OutRight = "animated fadeOutRight";
 		} 
 	];
 
-app.controller('rateStoreController', function($scope){
+app.controller('rateStoreController', function($scope,$timeout){
 	$scope.lower = 0;
 	$scope.higher = 0;
 	
@@ -67,6 +67,8 @@ app.controller('rateStoreController', function($scope){
 	$scope.changeTab1 = function(){
 		$scope.class2 = OutRight;
 		$scope.class1 = inLeft;
+
+		$timeout(function(){$scope.show = false}, 400);   
 	}
 
 

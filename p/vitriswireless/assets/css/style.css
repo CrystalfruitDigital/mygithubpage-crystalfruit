@@ -11,9 +11,28 @@ body {
 	overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #52aa77;
+  outline: 1px solid #52aa77;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .75), rgba(255, 255, 255, 0));
 }
 
 a {
@@ -79,13 +98,13 @@ h2 {
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 23px;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
 }
 
 h4 {
-	font-size: 12px;
+	font-size: 18px;
 	letter-spacing: 1px;
 }
 
@@ -247,6 +266,7 @@ textarea.form-control {
 
 .pfblock-vitris {
 	background: #f5fff5;
+	box-shadow: 0px 0px 50px -5px rgba(20, 50, 30, .1);
 }
 
 .pfblock-image {
@@ -367,7 +387,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover-old.jpg);
+	background: url(../images/cover-home.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -450,8 +470,8 @@ textarea.form-control {
 }*/
 
 #how-it-works {
-	padding: 50px;
-	background: url(../images/cover.jpg);
+	padding: 100px 50px 50px 50px;
+	background: url(../images/cover-how-it-works.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -753,7 +773,7 @@ textarea.form-control {
 @media (max-width: 967px) {
 
 	#home {
-		background: url(../images/cover-sm.jpg);
+		background: url(../images/cover-home-mobile.jpg);
 		background-color: #222;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
