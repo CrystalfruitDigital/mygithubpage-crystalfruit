@@ -33,3 +33,20 @@
     }); 
 
 })(jQuery);
+
+var volumeOn = true;
+
+$(document).ready(function(){
+    $("#toggleMute").click(function() {
+        $("#video-background").prop('muted', !$("#video-background").prop('muted'));
+        if(volumeOn){
+            $("#toggleMute").removeClass("ion-volume-mute");
+            $("#toggleMute").addClass("ion-volume-medium");
+            volumeOn = false;
+        } else {
+            $("#toggleMute").removeClass("ion-volume-medium");
+            $("#toggleMute").addClass("ion-volume-mute");
+            volumeOn = true;
+        }
+    });
+});
