@@ -5,6 +5,18 @@ http://www.bootstrapzero.com
 
 */
 
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align: center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Questrial);
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:700);
 
@@ -271,7 +283,7 @@ header {
 header .header-content {
     position: relative;
     width: 100%;
-    padding: 100px 15px;
+    padding: 130px 15px;
     text-align: center;
     z-index: 3;
 }
@@ -288,6 +300,7 @@ header .header-content .inner h1 {
 }
 
 header .header-content .inner img {
+    margin-top: 1%;
     max-width: 200px;
     height: auto;
     display: block;
@@ -360,8 +373,25 @@ footer {
         font-size: 2.5em;
     }
 
+    header .header-content .inner p {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+        font-size: 18px;
+    }
+    
+    section {
+        min-height: 600px;
+        padding: 100px 0;
+    }
+
 header .header-content .inner img {
     max-width: 200px;
+}
+
+
+.loginsignup-form{
+    padding: 0px 30px 0px 30px;
 }
 
 .subscribe-btn {
@@ -501,6 +531,21 @@ textarea {
     margin: 0 auto 20px;
 }
 
+.exsection{
+    border-bottom:2px solid white
+}
+
+.eximg{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.extext{
+    padding-top: 50px;
+}
+
 .gallery-box {
     display: block;
     position: relative;
@@ -550,6 +595,19 @@ textarea {
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
+}
+
+.close-modal{
+    margin-right: 20px;
+}
+.close-modal:hover{
+    color: #4c3791;
+}
+
+.quality-circ{
+    margin-left: 5px;
+    border: 1px solid white;
+    border-radius: 50px;
 }
 
 .btn-default {
