@@ -1,41 +1,38 @@
-   html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-  #map {
-    height: 100%;
-  }
+ body, html {
+                height: 100%;
+                width: 100%;
+            }
+            .angular-google-map-container {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+            }
 
-  #map-canvas {
-    margin: 0;
-    padding: 0;
-    height: 600px;
-    max-width: none;
+            .middle {
+                display: table;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-}
+            /*
+            Use bootstraps container w/ some overrides, nice thing about this on bootstrap is there is
+            psuedo element with clearfix and display: table; , all after (which is why I know .middle works above)
+            */
+            .container{
+                width: 50%;
+                padding-left: 0;
+                padding-right: 0;
+            }
 
-
-#map-canvas img {
-    max-width: none !important;
-}
-.gm-style-iw {
-   width: 350px !important;
-   top: 120 !important;
-   left: 500 !important;
-   height: 460px;
-   padding-left: 0px;
-   overflow: visible !important; 
-   line-height: 1.35;
-   white-space: nowrap;
-    padding-right: 0px;
-  
-}
+/*Container of the content*/
 #container{
-  height: 100%;
+  height: 475px;
   width: 300px;
   overflow: hidden;
 }
+
+/*header*/
 #top{
   background-image: url('../img/city.jpg');
   background-color: rgba(0,204,0,0.5);
@@ -44,6 +41,8 @@
   
   background-size: 100%;
 }
+
+/*header image*/
 #top img{
   border-radius: 50%;
   width: 115px;
@@ -56,6 +55,7 @@
 
 }
 
+/*header name*/
 #name{
   color:white;
   text-align: center;
@@ -65,6 +65,7 @@
   margin-right: 5px;
 }
 
+/*infomation tabs of rating and repairs*/
 #info-tab{
   margin-top: 5px;
   height: 50px;
@@ -72,6 +73,7 @@
      
 }
 
+/*repair tab*/
 #info-tab-left{
   border-right: solid;
   border-color: white;
@@ -82,6 +84,8 @@
   height: 50px;
 
 }
+
+/*rating tab*/
 #info-tab-right{
   border-left: solid;
   border-radius: 0.5px;
@@ -94,6 +98,7 @@
 
 }
 
+/*text for the repair and rating tab*/
 .text{
   font-family: Open Sans, Segoe UI Light,sans-seri; 
   text-align: center;
@@ -103,6 +108,7 @@
   
 }
 
+/*number for the repair and rating tab*/
 .number{
   font-weight: 500;
   color: white;
@@ -111,13 +117,18 @@
   margin-top: 5px;
 }
 
+/*infomation below the header*/
 #info-para{
   margin-top: 20px;
+  padding-bottom: 200px;
   margin-bottom: 0px;
   height: 150px;
   width: 300px;
   
 }
+
+
+/*word wrap for information*/
 #test{
   white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
 white-space: -pre-wrap;      /* Opera 4-6 */
