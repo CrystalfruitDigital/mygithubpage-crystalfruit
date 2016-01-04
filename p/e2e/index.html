@@ -16,7 +16,6 @@
   <body>
 
     <!-- <div id="loading"></div> -->
-<!--     http://mazwai.com/system/posts/videos/000/000/194/original/something-more-v2.mp4 -->
 
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -56,22 +55,12 @@
         </div>
     </nav>
     <header id="home">
-        <i class="icon-lg ion-volume-mute wow fadeIn mute-btn" data-wow-delay=".5s" id="toggleMute"></i>
         <div class="header-content">
             <div class="inner">
-                <center><img class="img-responsive wow fadeInUp" data-wow-delay=".3s" src="./media/logo.png"/></center>
-                
-                <h1 class="wow fadeInDown" data-wow-delay=".3s">Education to Elite</h1> 
-                
+                <center><img class="img-responsive" src="./media/logo_large.png" style="max-width: 400px"/></center>
                 <hr>
-                <h3 class="wow fadeIn" data-wow-delay="1s">Overseas Elite Recruitment Expert</h3>
-                <h4 class="wow fadeIn" data-wow-delay="1s">Find jobs in China. Subscribe to get the latest news.</h4>
-                
-				<span class="input input--minoru wow fadeIn" data-wow-delay="1.5s">
-					<input class="input__field input__field--minoru" type="text" id="input-13" placeholder="E-mail" />
-				</span>
-                <br>
-                <button class="subscribe-btn" data-toggle="modal" data-target="#alertModal">Subscribe</button>
+                <!-- <h1 class="">Education to Elite</h1> -->
+                <h3>Overseas Elite Recruitment Expert</h3>
                 <hr>
                 <a href="#project" class="btn btn-primary btn-md page-scroll">The Project</a>
                 <a href="#works" class="btn btn-primary btn-md page-scroll">How It Works</a>
@@ -80,7 +69,7 @@
             </div>
         </div>
         <video autoplay="" loop="true" class="fillWidth fadeIn wow collapse in" poster="./media/shanghai.jpg" id="video-background">
-            <source src="http://mazwai.com/system/posts/videos/000/000/194/original/something-more-v2.mp4 " type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="./media/cityvid.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="fillWidth video-overlay"></div>
     </header>
@@ -88,13 +77,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <i class="icon-lg ion-android-bulb wow pulse" data-wow-iteration="infinite"></i>
-                    <h2 class="margin-top-0 text-primary wow fadeIn" data-wow-delay=".1s">The Project</h2>
-                    <hr>
-                    <h4>We aim to <span style="color:#bab;font-weight:600">connect students with the best job available</span> for them in a <span style="color:#bab;font-weight:600">personalized way</span>.</h4>
+                    <h2 class="margin-top-0 text-primary">The Project</h2>
                     <hr>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center wow fadeInUp" data-wow-delay=".2s">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                     <img class="img-responsive" src="./media/match.jpg"/>
                     <hr>
                     <h2 class="margin-top-0 text-primary">A Perfect Match</h2>
@@ -102,7 +88,7 @@
                         With our recommended jobs feature, you'll find the perfect match in no time at all!
                     </h4>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                     <img class="img-responsive" src="./media/networking.jpg"/>
                     <hr>
                     <h2 class="margin-top-0 text-primary">Professional Networking</h2>
@@ -110,7 +96,7 @@
                         Connect with professionals all around the world easily with our social platform.
                     </h4>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 text-center wow fadeInUp" data-wow-delay=".4s">
+                <div class="col-lg-4 col-md-4 col-sm-12 text-center">
                     <img class="img-responsive" src="./media/personal.jpg"/>
                     <hr>
                     <h2 class="margin-top-0 text-primary">A Personalized Experience</h2>
@@ -125,8 +111,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <i class="icon-lg ion-ios-book wow fadeInDown" data-wow-delay=".1s"></i>
-                    <h2 class="margin-top-0 text-primary">How It Works</h2>
+                    <h2 class="margin-top-0 text-primary">Learn How It Works</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -135,20 +120,20 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2 col-md-6 text-center">
                     <div class="feature">
-                        <i class="icon-lg ion-android-people wow fadeInLeft" data-wow-delay=".2s"></i>
+                        <i class="icon-lg ion-android-people wow fadeIn" data-wow-delay=".3s"></i>
                         <h3>For Students</h3>
-                        <p class="text-muted">Learn about all of the benefits of living and working in China. Find a job in a Chinese city today!</p>
+                        <p class="text-muted">Find a job in your home city!</p>
                         <hr>
-                        <a href="./students" class="btn btn-primary btn-xl page-scroll">Find a Job</a>
+                        <a href="./students" class="btn btn-primary btn-md page-scroll">Find a Job</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="feature">
-                        <i class="icon-lg ion-briefcase wow fadeInRight" data-wow-delay=".2s"></i>
+                        <i class="icon-lg ion-android-train wow fadeIn" data-wow-delay=".3s"></i>
                         <h3>For Employers</h3>
-                        <p class="text-muted">Learn how to start getting connected with talented students who have international experience today!</p>
+                        <p class="text-muted">Find a well prepared employee with international experience.</p>
                         <hr>
-                        <a href="./employers" class="btn btn-primary btn-xl page-scroll">Hire a Student</a>
+                        <a href="./employers" class="btn btn-primary btn-md page-scroll">Start Hiring</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +147,7 @@
                     <hr>
                 </div>
             </div>
-            <div class="row no-gutter wow fadeIn" data-wow-delay=".2s">
+            <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#galleryModal" class="gallery-box" data-toggle="modal"  data-text="Professional Environments" data-src="./media/workdesk.jpg" content="123">
                         <img src="./media/workdesk.jpg" class="img-responsive" alt="Image 1">
@@ -296,11 +281,10 @@
             </div>
         </div>
     </section> -->
-    <aside class="bg-dark" id="join">
+    <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <i class="icon-lg ion-ios-people" title="javascript"></i>
-                <h2 class="text-primary wow shake" data-wow-delay="4s">Join Our Team!</h2>
+                <h2 class="text-primary">Join Our Team</h2>
             </div>
             <br>
             <hr/>
@@ -308,47 +292,43 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <h6 class="wide-space text-center wow fadeInDown" data-wow-delay=".1s">WE ARE LOOKING FOR</h6>
-                        <div class="col-sm-4 col-xs-12 text-center">
-                            <hr>
-                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>&nbsp;&nbsp;<span class="slash">/</span> &nbsp;
+                        <h6 class="wide-space text-center">WE ARE LOOKING FOR</h6>
+                        <div class="col-sm-6 col-xs-12 text-center">
+                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i> <h1>+</h1> 
                             <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
-                            <h4 class=" wow shake" data-wow-delay="1s">Web Developers</h4>
-                        </div>
-                        <div class="col-sm-4 col-xs-12 text-center">
                             <hr>
-                            <br>
-                            <center><img src="./media/logo.png" class="img-responsive" style="max-height: 6em"/></center>
-                            <br>
-                            <h4 class="wow shake" data-wow-delay="2s">Education to Elite Investors and Business Partners</h4>
+                            <h4>Web Developers</h4>
                         </div>
-                        <div class="col-sm-4 col-xs-12 text-center">
+                        <div class="col-sm-6 col-xs-12 text-center">
+                            <br>
+                            <center><img src="./media/logo_small.png" class="img-responsive"/></center>
+                            <br>
                             <hr>
-                            <i class="icon-lg ion-network" title="javascript"></i>&nbsp;&nbsp;<span class="slash">/</span> &nbsp;
-                            <i class="icon-lg ion-briefcase" title="javascript"></i>
-                            <h4 class="wow shake" data-wow-delay="3s">Network Operation Associates</h4>
+                            <h4>E2E Investors and Business Partners</h4>
                         </div>
+                        <!-- <div class="col-sm-4 col-xs-12 text-center">
+                            <img src="./media/teamwork.jpg" class="img-responsive"/>
+                            <hr>
+                            <h4>Marketing Associates</h4>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <hr class="primary">
                     Interested in joining us?
-                    <br>
-                    <br>
+                    <hr>
                     <a href="mailto:careers@edueli.net?subject=Education to Elite Career Inquiry&body=Hello! I saw your website and would be interested in applying as a __. I think I am the best candidate for the job because __. Attached is my résumé and contact information. Thank you!" target="_blank" class="btn btn-default btn-lg wow flipInX">E-mail us today!</a>
                 </div>
             </div>
         </div>
     </aside> 
     <section id="last">
-        <div class="container last-content">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <i class="icon-lg ion-happy" title="javascript"></i>
                     <h2 class="margin-top-0 wow fadeIn">Contact Us</h2>
                     <hr class="primary">
                     <p>We would love to get in touch with you!</p>
-                    <hr>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <form class="contact-form row">
@@ -374,18 +354,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="row text-center">
-                <br><br>
-                <hr>
-                <h4>Connect with us on:</h4>
-                <br>
-                <i class="icon step size-32 ion-chatboxes" title="wechat"></i>&nbsp;&nbsp; WeChat : HYHCareer
-                <br>
-                <i class="icon step size-32 ion-ios-telephone" title="wechat"></i>&nbsp;&nbsp; Phone : (484).264.5766
-                <br>
-                <i class="icon step size-32 ion-email" title="wechat"></i>&nbsp;&nbsp; E-mail : info@e2e.com
-                <hr>
             </div>
         </div>
     </section>
