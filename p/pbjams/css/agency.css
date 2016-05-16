@@ -9,7 +9,7 @@ body {
 }
 
 .text-muted {
-  color: #333
+  color: #555
 }
 
 .text-primary {
@@ -76,6 +76,7 @@ h5,
 h6 {
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  white-space: normal;
   font-weight: 700
 }
 
@@ -140,8 +141,32 @@ fieldset[disabled] .btn-primary.active {
   background-color: #fff
 }
 
+.btn-lg {
+  background-color: #50CED2;
+  white-space: normal;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn-xxl {
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  white-space: normal;
+  background-color: #FDB640;
+  border-color: #C19E74;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+  margin: 0;
+  transition: .2s
+}
+
 .btn-xl {
   color: #fff;
+  width: 100%;
   max-width: 100%;
   white-space: normal;
   background-color: #FDB640;
@@ -271,6 +296,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 @media (min-width:768px) {
+  .btn-xl {
+    width: 40%;
+  }
   .pbj-grad {
     background-image: -moz-linear-gradient(top, #50CED2 12%, #FF5B47 12%, #FF5B47 80%, #FFA552 80%, #FFA552 90%, #FCD55C 90%);
     background-image: linear-gradient(top, #50CED2 12%, #FF5B47 12%, #FF5B47 80%, #FFA552 80%, #FFA552 90%, #FCD55C 90%);
@@ -372,13 +400,13 @@ header .intro-text .intro-heading {
 }
 
 section {
-  padding: 100px 0
+  padding: 100px 0;
 }
 
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 section h3.section-subheading {
@@ -632,76 +660,33 @@ section h3.section-subheading {
     /* Chrome, Safari, Opera */
     filter: brightness(2000%);
   }
-  .timeline>li {
-    min-height: 150px
-  }
-  .timeline>li .timeline-panel {
-    padding: 0 20px 20px
-  }
-  .timeline>li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px
-  }
-  .timeline>li .timeline-image h4 {
-    font-size: 18px;
-    margin-top: 30px;
-    line-height: 26px
-  }
-  .timeline>li.timeline-inverted>.timeline-panel {
-    padding: 0 20px 20px
+
+  #gmap_canvas {
+    width: 100%;
+    height: 500px;
   }
 }
 
-@media (min-width:1200px) {
-  .timeline>li {
-    min-height: 170px
-  }
-  .timeline>li .timeline-panel {
-    padding: 0 20px 20px 100px
-  }
-  .timeline>li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px
-  }
-  .timeline>li .timeline-image h4 {
-    margin-top: 40px
-  }
-  .timeline>li.timeline-inverted>.timeline-panel {
-    padding: 0 100px 20px 20px
-  }
+#gmap_canvas {
+  width: 100%;
+  height: 500px;
 }
 
-.team-member {
-  text-align: center;
-  margin-bottom: 50px
-}
-
-.team-member img {
-  margin: 0 auto;
-  border: 7px solid #fff
-}
-
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none
-}
-
-.team-member p {
-  margin-top: 0
-}
-
-aside.clients img {
-  margin: 50px auto
+#gmap_canvas img {
+  max-width: none!important;
+  background: none!important
 }
 
 section#contact {
   background-color: #222;
-  background-image: url(../img/map-image.png);
+  background-image: url(../img/contact-bg.jpg);
   background-position: center;
   background-repeat: no-repeat
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
 }
 
 section#contact .section-heading {
@@ -807,6 +792,10 @@ ul.social-buttons li a {
 
 .scarlet-bg {
   background-color: #FF5D40;
+}
+
+.orange-bg {
+  background-color: #FBA542;
 }
 
 .fb-bg {
@@ -918,7 +907,7 @@ ul.social-buttons li a:active {
 
 ::selection {
   text-shadow: none;
-  /*background: rgba(255, 255, 255, .3)*/
+  background: rgba(255, 255, 255, .3)
 }
 
 img::selection {
@@ -931,4 +920,17 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #fff
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #777;
+  outline: 1px solid slategrey;
 }
