@@ -16,11 +16,10 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 	
 // Create the email and send the message
-$to = 'tehjawn@gmail.com';
-
-$email_subject = "New Message to PB&Jams from:  $name";
-$email_body = "Hi Megan, you've received a new message for PB&Jams!\n\nHere's the info...\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: autocontact@pbandjamsphl.com\n";
+$to = 'tehjawn@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Booking Request for PB&Jams from:  $name";
+$email_body = "Hi Megan, you have a new booking request for PB&Jams!\n\nHere's the info...\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$headers = "From: autobooking@pbandjamsphl.com\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			

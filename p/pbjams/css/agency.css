@@ -27,9 +27,25 @@ body {
 
 .elephant-white {
   height: 50px;
-  left: 50px;
+  left: 10px;
   position: absolute;
-  background: transparent;
+  -webkit-filter: brightness(2000%);
+  /* Chrome, Safari, Opera */
+  filter: brightness(2000%);
+}
+
+.table a {
+  color: #5588ee;
+}
+.table a:hover {
+  color: #88aaff;
+}
+
+.logo-white {
+  height: 100px;
+  left: 50px;
+  top: -25px;
+  position: absolute;
   -webkit-filter: brightness(2000%);
   /* Chrome, Safari, Opera */
   filter: brightness(2000%);
@@ -153,13 +169,12 @@ fieldset[disabled] .btn-primary.active {
   max-width: 100%;
   white-space: normal;
   background-color: #FDB640;
-  border-color: #C19E74;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  border-radius: 0;
   font-weight: 700;
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 20px 40px;
+  font-size: 20px;
+  padding: 40px;
   margin: 0;
   transition: .2s
 }
@@ -307,14 +322,6 @@ fieldset[disabled] .btn-xl.active {
     background-image: -ms-linear-gradient(top, #50CED2 12%, #FF5B47 12%, #FF5B47 80%, #FFA552 80%, #FFA552 90%, #FCD55C 90%);
     background-image: -webkit-gradient(linear, right top, right bottom, color-stop(12%, #50CED2), color-stop(12%, #FF5B47), color-stop(80%, #FF5B47), color-stop(80%, #FFA552), color-stop(90%, #FFA552), color-stop(90%, #FCD55C));
   }
-  .elephant-white {
-    height: 50px;
-    left: 50px;
-    background: transparent;
-    -webkit-filter: brightness(2000%);
-    /* Chrome, Safari, Opera */
-    filter: brightness(2000%);
-  }
   .navbar-default {
     background-color: transparent;
     padding: 15px 0;
@@ -453,7 +460,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -501,6 +508,23 @@ section h3.section-subheading {
 }
 
 @media (min-width:767px) {
+  .elephant-white {
+    height: 50px;
+    left: 18%;
+    position: absolute;
+    -webkit-filter: brightness(2000%);
+    /* Chrome, Safari, Opera */
+    filter: brightness(2000%);
+  }
+  .logo-white {
+    height: 100px;
+    left: 20%;
+    top: -13px;
+    position: absolute;
+    -webkit-filter: brightness(2000%);
+    /* Chrome, Safari, Opera */
+    filter: brightness(2000%);
+  }
   #portfolio .portfolio-item {
     margin: 0 0 30px
   }
@@ -620,6 +644,60 @@ section h3.section-subheading {
 }
 
 @media (min-width:768px) {
+  @media (max-width: 1300px) {
+    .elephant-white {
+      height: 50px;
+      left: 45%;
+      position: absolute;
+      -webkit-filter: brightness(2000%);
+      /* Chrome, Safari, Opera */
+      filter: brightness(2000%);
+    }
+    .logo-white {
+      height: 100px;
+      left: 48%;
+      top: -13px;
+      position: absolute;
+      -webkit-filter: brightness(2000%);
+      /* Chrome, Safari, Opera */
+      filter: brightness(2000%);
+    }
+    .navbar-header {
+      float: none;
+    }
+    .navbar-toggle {
+      display: block;
+    }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar-text {
+      float: none;
+      margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+      display: block!important;
+    }
+    .collapsing {
+      overflow: hidden!important;
+    }
+  }
   .timeline:before {
     left: 50%
   }
@@ -652,24 +730,15 @@ section h3.section-subheading {
 }
 
 @media (min-width:992px) {
-  .elephant-white {
-    height: 50px;
-    background: transparent;
-    left: auto;
-    -webkit-filter: brightness(2000%);
-    /* Chrome, Safari, Opera */
-    filter: brightness(2000%);
-  }
-
   #gmap_canvas {
     width: 100%;
-    height: 500px;
+    height: 668px;
   }
 }
 
 #gmap_canvas {
   width: 100%;
-  height: 500px;
+  height: 668px;
 }
 
 #gmap_canvas img {
@@ -679,7 +748,8 @@ section h3.section-subheading {
 
 section#contact {
   background-color: #222;
-  background-image: url(../img/contact-bg.jpg);
+  background-image: url(../img/disp-contact.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat
 }
@@ -747,6 +817,57 @@ section#contact .text-danger {
   color: #e74c3c
 }
 
+
+section#bookus .form-group input,
+section#bookus .form-group textarea {
+  padding: 20px
+}
+
+section#bookus .form-group input.form-control {
+  height: auto
+}
+
+section#bookus .form-group textarea.form-control {
+  height: 217px
+}
+
+section#bookus .form-control:focus {
+  border-color: #fff;
+  box-shadow: none
+}
+
+section#bookus::-webkit-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+section#bookus:-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+section#bookus::-moz-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+section#bookus:-ms-input-placeholder {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbb
+}
+
+section#bookus .text-danger {
+  color: #e74c3c
+}
+
 footer {
   padding: 25px 0;
   text-align: center
@@ -786,6 +907,14 @@ ul.social-buttons li a {
   transition: all .3s
 }
 
+.white-bg {
+  background-color: white;
+}
+
+.fwhite-bg {
+  background-color: #eee;
+}
+
 .teal-bg {
   background-color: #59D2D9;
 }
@@ -809,6 +938,33 @@ ul.social-buttons li a {
 
 .gold-bg {
   background-color: #FBD640;
+}
+
+.orange-sec-link {
+  color: #333;
+  text-decoration: underline;
+}
+
+.orange-sec-link:hover {
+  color: #59D2D9;
+}
+
+.break {
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+.gallery-btn {
+  color: #333;
+  font-size: 2em;
+  transition: .2s;
+}
+
+.gallery-btn:hover {
+  text-decoration: none;
+  color: white;
 }
 
 ul.social-buttons li a:hover,
@@ -902,12 +1058,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
   text-shadow: none;
-  background: #fff
+  background: #eeefff
 }
 
 ::selection {
   text-shadow: none;
-  background: rgba(255, 255, 255, .3)
+  background: rgba(200, 225, 255, .3)
 }
 
 img::selection {
@@ -922,15 +1078,20 @@ body {
   webkit-tap-highlight-color: #fff
 }
 
-body::-webkit-scrollbar {
-    width: 1em;
+*::-webkit-scrollbar {
+  width: 1em;
 }
- 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
-body::-webkit-scrollbar-thumb {
+
+*::-webkit-scrollbar-thumb {
   background-color: #777;
   outline: 1px solid slategrey;
+}
+
+
+.gray-bg {
+  background-color: #aaa;
 }
