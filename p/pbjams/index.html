@@ -13,6 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link href="css/agency.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/instagram.css" />
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -22,17 +23,20 @@
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
 </head>
 
 <body id="page-top" class="index">
+  <script>
+  document.body.className += ' fade-out';
+  </script>
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top pbj-grad">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll pbj-grad">
+      <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -41,6 +45,7 @@
         </button>
         <a class="page-scroll" href="#page-top">
           <img class="elephant-white" src="./img/slides/main.png" />
+          <img class="logo-white" src="./img/logo.png" />
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,7 +55,7 @@
             <a href="#page-top"></a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">About Me</a>
+            <a class="page-scroll" href="#about">About Us</a>
           </li>
           <li>
             <a class="page-scroll" href="#thecartedition">#THECARTEDITION</a>
@@ -58,11 +63,17 @@
           <li>
             <a class="page-scroll" href="#location">Location</a>
           </li>
+          <!-- <li>
+            <a class="page-scroll" href="#impact">Our Impact</a>
+          </li> -->
+          <!-- <li>
+            <a class="page-scroll" href="#bookus">Book Us</a>
+          </li> -->
           <li>
-            <a class="page-scroll" href="#impact">Outreach & Impact</a>
+            <a class="page-scroll" href="#contact">Contact/Book</a>
           </li>
           <li>
-            <a class="page-scroll" href="#contact">Contact Us</a>
+            <a class="page-scroll" href="#subscribeModal" data-toggle="modal">Subscribe</a>
           </li>
         </ul>
       </div>
@@ -86,12 +97,12 @@
           </div>
         </div>
         <div class="intro-lead-in">Philadelphia's Nut Butter Company</div>
-        <p class="slogan">classic food. new flavor</p>
+        <p class="slogan">Classic food. New flavor.</p>
         <br>
-        <a href="http://pbandjamsphl.com/ordersome.html" class="btn btn-xl">View Our Products</a>
+        <a href="#shopModal" data-toggle="modal" class="btn btn-xl">View Our Products</a>
         <br>
         <br>
-        <a href="https://www.indiegogo.com/projects/pb-jams-feed-people-help-people-and-have-fun" target="_blank" class="btn btn-info btn-lg">Support Our Crowdfunding Campaign!</a>
+        <a href="#commercialModal" data-toggle="modal" class="btn btn-info btn-xl teal-bg">Watch Our Commercial</a>
         <br>
         <br>
         <h5>Follow Us!</h5>
@@ -102,83 +113,133 @@
           </li>
           <li><a class="scarlet-bg" href="https://www.instagram.com/pbandjamsphl/"><i class="fa fa-instagram"></i></a>
           </li>
+          <li><a class="gray-bg" href="#subscribeModal" data-toggle="modal"><i class="fa fa-envelope"></i></a>
+          </li>
         </ul>
       </div>
     </div>
   </header>
   <!-- Services Section -->
-  <section id="about" class="gold-bg shadow-top">
+  <section id="about" class="gold-bg shadow-top text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12">
           <img src="./img/megan.jpg" class="img-med img-responsive img-centered img-circle" alt="">
           <br>
-          <h2 class="section-heading">About Me</h2>
-          <h3 class="section-subheading text-muted">I’m Megan Gibson, founder of PB&amp;Jams – Philadelphia’s nut butter company. I started PB&amp;Jams because I wanted to blend three core passions:</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-3">
-          <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-spoon fa-stack-1x"></i>
-                    </span>
-          <h4 class="service-heading">Food</h4>
-          <p class="text-muted">Nut butter and nut butter-inspired culinary pursuits.</p>
-        </div>
-        <div class="col-md-3">
-          <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-music fa-stack-1x"></i>
-                    </span>
-          <h4 class="service-heading">Music</h4>
-          <p class="text-muted">I DJ, and anywhere #TheCartEdition rolls, it brings jams, with a heavy biased towards funk, soul, feel good 80’s and golden-age hip-hop.</p>
-        </div>
-        <div class="col-md-3">
-          <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-graduation-cap fa-stack-1x"></i>
-                    </span>
-          <h4 class="service-heading">Education</h4>
-          <p class="text-muted">Specifically nutrition and health, at the intersection of those in my community who need to learn about it most</p>
-        </div>
-        <div class="col-md-3">
-          <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-building fa-stack-1x"></i>
-                    </span>
-          <h4 class="service-heading">Philadelphia</h4>
-          <p class="text-muted">Philadelphia, where I grew up and where I make my home and where I seek to make a difference</p>
+          <h2 class="section-heading">About Us</h2>
+          <p style="font-size:12pt">PB&amp;Jams, Philadelphia’s nut butter company, was founded by Megan Gibson – a high school health teacher and life-long athlete with a passion for great food, great music (the “jams” in PB&amp;Jams!), and her community.</p>
+          <!-- <p style="font-size:12pt">
+            Megan’s love for nut butter comes from her mother, whose family hails from the heart of peanut country in Virginia. Stories of the family sitting together, shelling peanuts and enjoying one another’s company were a constant as Megan was growing up. Nuts and nut butters were a staple in her home – so it was no surprise that after sampling a savory, spicy Haitian peanut butter, Megan decided to start crafting delicious, creative nut butter combinations of her own. Today, PB&amp;Jams is Philadelphia’s small-batch, all-natural nut butter company, boasting six varieties of nut butters – including a spicy peanut butter (Hot or Not), inspired by Megan’s first taste of Haitian peanut butter. And of course, Megan’s mom is still our biggest fan. (In case you’re wondering, The Cashew – our delicious cashew butter – is her favorite.)</p>
+          <p style="font-size:12pt"> In addition to our nut butters, which you can find at farmer’s markets and finer retailers citywide, our food truck serves up incredible sandwiches using our nut butters and other fresh, carefully selected ingredients – from sweet treats to savory bites.</p> -->
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-md-12">
-          I also started PB&amp;Jams because I’m an entrepreneur from a family of entrepreneurs, and I’ve seen first hand how a small business can prove an unparalleled outlet for creative expression and making a difference in the community. So, as I was exploring ways to blend my passions of food, music and community service, PB&amp;Jams became the logical next step. So I’m working to hand-craft precision blended nut butters while remaining a locally involved, locally loved and locally renowned company.
+          <h2>Our Mission</h2>
+          <!-- <p style="font-size:12pt">PB&amp;Jams, Philadelphia’s nut butter company, is committed to providing a delicious, healthful and fun food experience to our customers. PB&amp;Jams works to give back to our community through education, advocacy, and increased access to both nutrition and opportunity. </p> -->
+          <p style="font-size:12pt">
+            At PB&amp;Jams, our motto is: “feed people, help people, and have fun!” Megan founded PB&amp;Jams to blend four core passions:</p>;
+          <br>
+          <br>
+        </div>
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-spoon fa-stack-1x"></i>
+                        </span>
+          <h4 class="service-heading">Food</h4>
+          <p class="text-muted">Nut butter and nut butter-inspired culinary pursuits.</p>
+        </div>
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-music fa-stack-1x"></i>
+                        </span>
+          <h4 class="service-heading">Music</h4>
+          <p class="text-muted">I DJ, and anywhere #TheCartEdition rolls, it brings jams, with a heavy biased towards funk, soul, feel good 80’s and golden-age hip-hop.</p>
+        </div>
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-graduation-cap fa-stack-1x"></i>
+                        </span>
+          <h4 class="service-heading">Education</h4>
+          <p class="text-muted">Specifically nutrition and health, at the intersection of those in my community who need to learn about it most</p>
+        </div>
+        <div class="col-md-3">
+          <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-building fa-stack-1x"></i>
+                        </span>
+          <h4 class="service-heading">Philadelphia</h4>
+          <p class="text-muted">Philadelphia, where I grew up and where I make my home and where I seek to make a difference</p>
+        </div>
+        <hr>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <a href="./about-us" class="btn btn-xl white-bg text-center" style="color:#333">Learn More About Us</a>
         </div>
       </div>
     </div>
+    <!-- <div class="row">
+        <div class="col-md-12">
+          <p style="font-size:14pt">I also started PB&amp;Jams because I’m an entrepreneur from a family of entrepreneurs, and I’ve seen first hand how a small business can prove an unparalleled outlet for creative expression and making a difference in the community. So, as I was exploring ways to blend my passions of food, music and community service, PB&amp;Jams became the logical next step. So I’m working to hand-craft precision blended nut butters while remaining a locally involved, locally loved and locally renowned company.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/display.png" class="img-responsive" style="margin-top: 5px">
+        </div>
+        <div class="col-md-6">
+          <p style="font-size: 12pt">So I’m working to hand-craft precision blended nut butters while remaining a locally involved, locally loved and locally renowned company.</p>
+          <ul class="list-unstyled">
+            <li style="font-size: 12pt;margin-bottom:10px">You can find PB&Jams Philadelphia nut butters at farmer’s markets and retail locations throughout the Delaware Valley. For a current listing, <a href="#location">click here</a>.</li>
+            <li style="font-size: 12pt;margin-bottom:10px">You can shop and buy products online <a href="http://pbandjamsphl.com/ordersome.html">here</a>.</li>
+            <li style="font-size: 12pt;margin-bottom:10px">You can see where #TheCartEdition, the PB&Jams Food Trailer, is touring – or hire me to cater your next event or party – to try my butters first-hand through an always fresh and revolving menu. Simply <a href="#thecartedition">click here</a>.</li>
+          </ul>
+          <p style="font-size: 12pt">Anyway you encounter PB&Jams, I hope you enjoy it, taste the love and then of course spread it to your friends, family and colleagues. Philly’s a city of love and relationship, and if you want to reach me, <a href="#contact">give me a shout</a>.</p>
+        </div>
+      </div> -->
+    </div>
   </section>
   <!-- Portfolio Grid Section -->
-  <section id="thecartedition" class="orange-bg">
+  <section id="thecartedition" class="orange-bg shadow-top">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">#THECARTEDITION</h2>
+          <h2 class="section-heading break">#THE&shyCART&shyEDITION</h2>
+          <hr>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fa fa-image fa-3x"></i>
-              </div>
-            </div>
+        <div class="col-md-4">
+          <img src="./img/cart.jpg" class="img-responsive">
+        </div>
+        <div class="col-md-8">
+          <p style="color: white; font-size: 14pt; text-align:left">
+            #THECARTEDITION delivers PB&Jams Philadelphia Nut Butters and Nut Butter Eats to events, parties and farmers markets throughout the Philadelphia region. Customers love the food and that unmistakable PB&Jams style. We like to think we set a distinct vibe that flows once our tiny, vintage trailer pulls up, all the while delivering big grooves and bigger flavor.
+          </p>
+          <br/>
+          <p style="color: white; font-size: 14pt; text-align:left">
+            Experience us first-hand on the street – find out where and when we’ll park next Let us help you take your next event or party from good to great with our custom catering services. Have a specific want or need? Let’s talk. See what’s currently on the <a class="orange-sec-link" href="http://pbandjamsphl.com/ordersome.html">menu</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 portfolio-item text-center">
+          <a href="#galleryModal" data-toggle="modal" class="gallery-btn">
+            <i class="fa fa-image fa-3x"></i>
+            <br/> Gallery
           </a>
-          <div class="portfolio-caption" style="color: white">
-            <h4>Gallery</h4>
-          </div>
         </div>
       </div>
     </div>
@@ -197,35 +258,106 @@
           <p style="font-size: 14pt; color:white">PB&Jams Philadelphia Nut Butters are available for sale at finer retailers and farmer’s markets throughout the city and Delaware Valley. </p>
           <p style="font-size: 14pt; color:white">You can also purchase our products online! Seeking our food cart? #TheCartEdition has you covered for locations and catering.</p>
           <hr>
-          <img src="./img/cart.jpg" class="img-responsive">
-        </div>
-        <div id="map-container" class="col-md-8">
-          <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-          <div style="overflow:hidden;height:100%;width:100%;">
-            <div id="gmap_canvas"></div>
+          <div class="text-center">
+            <button class="btn btn-lg text-center white-bg">Buy Online</button>
           </div>
-          <script type="text/javascript">
-          function init_map() {
-            var myOptions = {
-              zoom: 13,
-              center: new google.maps.LatLng(39.95308850569871, -75.21823218518068),
-              mapTypeId: google.maps.MapTypeId.TERRAIN
-            };
-            map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-            marker = new google.maps.Marker({
-              map: map,
-              position: new google.maps.LatLng(39.95308850569871, -75.21823218518068)
-            });
-            infowindow = new google.maps.InfoWindow({
-              content: "<b>PB&amp;Jams</b><br/>S 48 st<br/> Philadelphia"
-            });
-            google.maps.event.addListener(marker, "click", function() {
-              infowindow.open(map, marker);
-            });
-            infowindow.open(map, marker);
-          }
-          google.maps.event.addDomListener(window, 'load', init_map);
-          </script>
+          <hr>
+        </div>
+        <div class="col-md-8">
+          <div class="fwhite-bg" style="height: 400px; overflow-y: scroll">
+            <table class="table table-hover fwhite-bg">
+              <tr class="white-bg">
+                <th>Type</th>
+                <th>Name</th>
+                <th>Website</th>
+                <th>Location</th>
+              </tr>
+              <tr>
+                <td>Cafe</td>
+                <td>Elixr</td>
+                <td><a href="http://www.elixrcoffee.com/">http://www.elixrcoffee.com/</a></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Cafe</td>
+                <td>HubBub Coffee</td>
+                <td>http://www.hubbubcoffee.com/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Cafe</td>
+                <td>Monkey &amp; The Elephant</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Cafe</td>
+                <td>Peddler Coffee</td>
+                <td>http://www.peddlercoffee.com/location/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Mariposa Coop</td>
+                <td>https://www.mariposa.coop/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Milk &amp; Honey Market</td>
+                <td>http://milkandhoneymarket.com/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Di Bruno Bro's</td>
+                <td>http://www.dibruno.com/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Carlino's Market</td>
+                <td>http://www.carlinosmarket.com/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Talula's Daily</td>
+                <td>http://talulasdaily.com/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Retail</td>
+                <td>Fair Food Farmstand</td>
+                <td>http://fairfoodphilly.org/fair-food-farmstand-2/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Farmer's Market</td>
+                <td>Rittenhouse Square Farmer's Market</td>
+                <td>http://www.farmtocity.org/farmersmarkets.asp</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Farmer's Market</td>
+                <td>Swarthmore Farmer's Market</td>
+                <td>http://www.swarthmorefarmersmarket.org/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Farmer's Market</td>
+                <td>Old City - Christ Church Farmer's Market</td>
+                <td>http://www.christchurchphila.org/News-Events/News-Events/129/vobid--1591/</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>CSA</td>
+                <td>Philly Foodworks CSA</td>
+                <td>http://phillyfoodworks.com/csa/</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -238,7 +370,7 @@
           <h2 class="section-heading">Our Outreach and Impact</h2>
           <hr>
           <p style="color: white; font-size: 14pt">
-          When you base your business on a nutritionally dense and relatively economical food source, it gives you opportunities to make a difference. As Philadlephia’s nut butter company, PB&Jams is actively pursuing ways to actively educate Philadelphians on making and eating food in ways that are healthy and sustainable. Of course, we think it starts with nut butter. Here’s what we’re doing to make a difference right now. 
+            When you base your business on a nutritionally dense and relatively economical food source, it gives you opportunities to make a difference. As Philadlephia’s nut butter company, PB&Jams is actively pursuing ways to actively educate Philadelphians on making and eating food in ways that are healthy and sustainable. Of course, we think it starts with nut butter. Here’s what we’re doing to make a difference right now.
           </p>
         </div>
       </div>
@@ -259,13 +391,52 @@
       </div>
     </div>
   </section>
-
-  <div>
-    <a href="http://pbandjamsphl.com/ordersome.html" class="btn btn-xxl">Buy Now</a>
-  </div>
-
+  <!-- Booking Section -->
+  <!-- <section id="bookus" class="gold-bg shadow-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Book Us</h2>
+          <h3 class="section-subheading" style="">Ask to book us for an event!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form name="sentMessage" id="bookingForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button type="submit" class="btn btn-xl">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="shadow-top">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -308,6 +479,11 @@
       </div>
     </div>
   </section>
+  <!-- Call to Action Section -->
+  <div class="space-bot">
+    <a href="http://pbandjamsphl.com/ordersome.html" class="btn btn-xxl half scarlet-bg">Buy Now</a>
+    <a href="#subscribeModal" data-toggle="modal" class="btn btn-xxl half teal-bg">Subscribe to our Newsletter!</a>
+  </div>
   <footer>
     <div class="container">
       <div class="row">
@@ -337,28 +513,96 @@
       </div>
     </div>
   </footer>
-  <!-- Portfolio Modals -->
-  <!-- Use the modals below to showcase details about your portfolio projects! -->
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="gallery" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl">
-          </div>
+  <!-- Gallery Modal-->
+  <!-- Modal -->
+  <div id="galleryModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header scarlet-bg">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" style="color: white; font-size: 2em">PB&Jams Instagram Gallery</h4>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              Modal
-            </div>
-          </div>
+        <div class="orange-band orange-bg"></div>
+        <div class="gold-band gold-bg"></div>
+        <div class="teal-band teal-bg"></div>
+        <div class="modal-body instafeed" style="text-align: center">
+          <div class="instagram"></div>
+        </div>
+        <div class="modal-footer">
+          <ul class="list-inline social-buttons text-center">
+            <li><b>Follow Us!</b></li>
+            <li><a class="teal-bg" href="https://twitter.com/pbandjamsphl"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a class="fb-bg" href="https://www.facebook.com/pbandjamsphl"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a class="scarlet-bg" href="https://www.instagram.com/pbandjamsphl/"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+  <!-- Subscribe Modal -->
+  <div id="subscribeModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header scarlet-bg">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" style="color: white; font-size: 2em">PB&Jams Mailing List</h4>
+        </div>
+        <div class="modal-body instafeed" style="text-align: center">
+          <iframe src="http://pbandjamsphl.us7.list-manage.com/subscribe?u=a8deb66eab0a38c4bce0af8dc&id=3ec556a04e" width="100%" height="700px" style="border: none"></iframe>
+        </div>
+        <div class="modal-footer">
+          <ul class="list-inline social-buttons text-center">
+            <li><b>Follow Us!</b></li>
+            <li><a class="teal-bg" href="https://twitter.com/pbandjamsphl"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a class="fb-bg" href="https://www.facebook.com/pbandjamsphl"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li><a class="scarlet-bg" href="https://www.instagram.com/pbandjamsphl/"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Commercial Modal -->
+  <div id="commercialModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header teal-bg">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body" style="text-align: center">
+          <img src="./img/triscuit.jpg" class="img-responsive" />
+          <hr>
+          <p>
+            <strong>PB&amp;Jams</strong> was chosen by the Triscuit Maker Fund, which celebrates up- and-coming artisanal foodmakers, to receive a $10,000 Indiegogo award and be featured in a commercial and ad campaign. Watch our Triscuit commercial below! To learn more, view the longer video story <a href="#" style="color:#38a">here</a>. </p>
+          <p>We are also thankful for our other amazing contributors: Don and Susan Wargo, Barry Person and Kara Beasley
+          </p>
+          <hr>
+          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/SQnyX5PLlsA" frameborder="0" allowfullscreen></iframe>
+          <hr>
+          <a href="https://www.indiegogo.com/projects/pb-jams-feed-people-help-people-and-have-fun" class="btn btn-xxl teal-bg">View it on IndieGoGo!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Shop Modal -->
+  <!-- <div id="shopModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-header orange-bg">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center" style="color: white; font-size: 2em">Shop PB&amp;Jams</h4>
+<a href="https://mkt.com/pb-and-jams-llc" class="sq-embed-menu" data-menu-item-images="small" data-menu-accent-color="50CED2" data-menu-template="column" data-menu-border="show" data-menu-item-descriptions="show">Order Online</a>
+      <script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div> -->
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
   <!-- Bootstrap Core JavaScript -->
@@ -369,10 +613,14 @@
   <script src="js/cbpAnimatedHeader.js"></script>
   <!-- Contact Form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
   <!-- Custom Theme JavaScript -->
-  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script src="js/agency.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!-- Instagram feed JavaScript-->
+  <script type="text/javascript" src="js/jquery.instagram.js"></script>
+  <script type="text/javascript" src="js/jquery.slimbox2.js"></script>
+  <script type="text/javascript" src="js/jquery.scripts.js"></script>
+  <script src="js/contact_me.js"></script>
 </body>
 
 </html>
