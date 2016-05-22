@@ -1173,12 +1173,12 @@ body {
   color: white;
 }
 
-.white-bg:hover {
+a.white-bg:hover {
   background-color: white;
   color: #777;
 }
 
-.fwhite-bg:hover {
+a.fwhite-bg:hover {
   background-color: white;
   color: #777;
 }
