@@ -24,6 +24,7 @@ $email_subject = "New $subject Message to PB&Jams from:  $name";
 $email_body = "Hi Megan, you've received a new message for PB&Jams!\n\nHere's the info...\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: autocontact@pbandjamsphl.com\n";
 $headers .= "Reply-To: $email_address";	
+echo $to + " - " + $email_subject + " - " + $email_body + " - " + $headers
 mail($to,$email_subject,$email_body,$headers);
 return true;			
 ?>

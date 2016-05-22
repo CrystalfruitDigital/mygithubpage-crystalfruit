@@ -882,7 +882,6 @@ footer span.copyright {
 }
 
 footer ul.quicklinks {
-  color: #8af;
   margin-bottom: 0;
   line-height: 40px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1250,4 +1249,5 @@ body.fade-out {
   border-radius: 10px;
   padding: 10px;
   font-size: 14pt;
+  margin: 0px;
 }
