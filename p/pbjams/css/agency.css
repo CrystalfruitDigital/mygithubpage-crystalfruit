@@ -882,6 +882,7 @@ footer span.copyright {
 }
 
 footer ul.quicklinks {
+  color: #8af;
   margin-bottom: 0;
   line-height: 40px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -910,10 +911,12 @@ ul.social-buttons li a {
 
 .white-bg {
   background-color: white;
+  color: #333;
 }
 
 .fwhite-bg {
   background-color: #eee;
+  color: #333;
 }
 
 .teal-bg {
@@ -1092,13 +1095,106 @@ body {
   outline: 1px solid slategrey;
 }
 
+/* Belcky CSS */
+
+.corktable{
+    height: 600px;
+    background-image: url(../img/header-bg.jpg);
+    border-radius: 25px;
+    padding-top: 20px;
+    box-shadow: -10px 10px 25px -13px black; 
+}
+.paper{
+    margin: auto;
+    width: 90%;
+    height: 67%;
+    border-radius: 3px;
+    box-shadow: -10px 10px 25px -13px black; 
+}
+.tack{
+    width: 90%;
+    margin: auto;
+}
+.tack img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 45%;
+    margin-top: -25px;
+}
+.tack-block{
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: white;
+    height: 30px;
+}
+.paper-title{
+    width: 80%;
+    padding: 0px 5px;
+    margin: 0px auto 20px auto;
+}
+
+.tack-block .red-line{
+    margin-left: 50px;
+    height: 100%;
+    width: 1px;
+    background-color: red;
+}
+.paper tr{
+    border-bottom: 1px solid #59D2D9;
+}
+.paper tr:nth-child(n+2):hover{
+    background-color: #FBA542;
+}
+.paper tr:nth-child(n+2):hover a{
+    color: white;
+}
+.paper td:first-child, .paper th:first-child{
+    width: 50px;
+    border-right: 1px solid red;
+}
+.paper table{
+    width: 100%;
+}
+.table-pad td, .table-pad th{
+    padding: 10px 5px 10px 10px;
+}
+.paper a, .paper a:visited{
+  color: #5588ee;
+}
+
+
+/*NEW CSS*/
 
 .gray-bg {
   background-color: #aaa;
 }
 
+.btn-xxl:hover {
+  color: white;
+}
+
+.white-bg:hover {
+  background-color: white;
+  color: #777;
+}
+
+.fwhite-bg:hover {
+  background-color: white;
+  color: #777;
+}
+
+.pink-bg {
+  background-color: #E61F73;
+  transition: .2s;
+}
+
+.pink-bg:hover {
+  background-color: #f28;
+}
+
 a.teal-bg:hover {
-  background-color: #8df;
+  background-color: #8de;
   border-color: white;
 }
 
@@ -1107,7 +1203,7 @@ a.scarlet-bg:hover {
 }
 
 a.orange-bg:hover {
-  background-color: #FBA542;
+  background-color: #fa6;
 }
 
 a.fb-bg:hover {
@@ -1136,11 +1232,22 @@ body.fade-out {
     transition: none;
 }
 
+.full {
+  width: 100%;
+}
+
 .half {
   float: left;
   width:50%;
 }
 
 .space-bot {
-  margin-bottom: 100px;
+  margin-bottom: 190px;
+}
+
+.contact-book-radio {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14pt;
 }
