@@ -1096,6 +1096,22 @@ body {
 
 /* Belcky CSS */
 
+.toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    
+    color: #555;
+}
+.toTop i{
+    color: #555;
+}
+.toTop i:hover{
+    color: #333;
+    transition: .5s;
+}
+
 .corktable{
     height: 600px;
     background-image: url(../img/header-bg.jpg);

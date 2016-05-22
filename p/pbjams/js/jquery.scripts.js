@@ -42,6 +42,19 @@ function calNewWidth(ele) {
     return {newWidth: newWidth, w: w};
 }
 
+function composeDistributeMes(){
+    var name = $('input#store-name').val();
+    var email = $('input#store-email').val();
+    var domain = email.replace(/.*@/, "");
+    var phone = $('input#store-phone').val();
+    var textArea = $('input#store-message').val();
+    var message = "Hello, my name is " + name + ". I would like to distribute PBJams products. My email is: "+ email + " And my phone number is: " + phone + ".";
+    if (domain == 'gmail' || domain == 'gmail.com' || domain == 'googlemail.com')
+        window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=info@pbandjamsphl.com&su=Distribution Partner Inquery for PBJams&body='+message);
+    else
+        window.open('mailto:info@pbandjamsphl.com&subject=Distribution Partner Inquery for PBJams&body='+message);
+}
+
 $(document).ready(function() {
     $.noConflict();
     $("#galleryModal").on('shown.bs.modal', function() {
