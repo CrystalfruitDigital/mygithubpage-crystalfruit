@@ -55,6 +55,7 @@ function composeDistributeMes(){
         window.open('mailto:info@pbandjamsphl.com&subject=Distribution Partner Inquery for PBJams&body='+message);
 }
 
+
 $(document).ready(function() {
     $.noConflict();
     $("#galleryModal").on('shown.bs.modal', function() {

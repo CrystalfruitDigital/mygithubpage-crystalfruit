@@ -8,7 +8,7 @@
   <meta name="description" content="PB&amp;Jams - Philadelphia's Nut Butter Company. Classic Food. New Flavor.">
   <meta name="author" content="CrystalFruit">
   <link href="../img/slides/main.png" rel="icon" type="image/png">
-  <title>PB&Jams</title>
+  <title>PB&amp;Jams - Shop</title>
   <!-- Bootstrap Core CSS -->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -29,6 +29,11 @@
 </head>
 
 <body id="page-top" class="index">
+  <div class="toTop">
+      <a class="page-scroll" href="#page-top">
+          <i class="fa fa-arrow-circle-o-up fa-4x"></i>
+      </a>
+  </div>
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top pbj-grad">
     <div class="container">
@@ -40,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="page-scroll" href="#page-top">
+        <a href="../">
           <img class="elephant-white" src="../img/slides/main.png" />
           <img class="logo-white" src="../img/logo.png" />
         </a>
@@ -104,7 +109,19 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form name="sentMessage" id="contactForm" novalidate>
+          
+          <!-- <form name="sentMessage" id="contactForm" novalidate> -->
+            <div class="row white-bg contact-book-radio">
+              <div class="col-md-6 col-md-offset-3 text-center">
+                <label class="half white-bg">
+                  <input type="radio" name="contactRadio" id="subject" value="Contact" onclick="switchContactType('contact')" checked> Contact
+                </label>
+                <label class="half white-bg">
+                  <input type="radio" name="contactRadio" id="subject" value="Booking" onclick="switchContactType('booking')"> Book
+                </label>
+              </div>
+            </div>
+            <br>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -119,8 +136,26 @@
                   <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
+                <div class="col-md-6 booking-field">
+                  <div class="form-group">
+                    <p style="color:white">Date of Event *</p>
+                    <input type="date" class="full" id="date" required data-validation-required-message="Please enter the date of the event.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-md-6 booking-field">
+                  <div class="form-group">
+                    <p style="color:white">Number of Guests *</p>
+                    <input type="number" class="form-control full" placeholder="Number of Guests *" id="guestCount" required data-validation-required-message="Please enter the number of guests you are expecting.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
               </div>
               <div class="col-md-6">
+                <div class="form-group booking-field">
+                  <input id="location" class="placepicker form-control" placeholder="Event location *" required data-validation-required-message="Please enter a location." />
+                  <p class="help-block text-danger"></p>
+                </div>
                 <div class="form-group">
                   <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                   <p class="help-block text-danger"></p>
@@ -129,10 +164,10 @@
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
-                <button type="submit" class="btn btn-xl">Send Message</button>
+                <button onclick="composeMessage()" class="btn btn-xl">Send Message</button>
               </div>
             </div>
-          </form>
+          <!-- </form> -->
         </div>
       </div>
     </div>
