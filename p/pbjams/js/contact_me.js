@@ -26,10 +26,10 @@ function composeMessage() {
   }
 
   if (domain == 'gmail' || domain == 'gmail.com' || domain == 'googlemail.com'){
-    window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=info@pbandjamsphl.com&su=' + subject + ' PBJams&body=' + message);
+    window.open('https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=pbandjamsphl@gmail.com&su=' + subject + ' PBJams&body=' + message);
   }
   else{
-    window.open('mailto:info@pbandjamsphl.com&subject=' + subject + ' PBJams&body=' + message);
+    window.open('mailto:pbandjamsphl@gmail.com&subject=' + subject + ' PBJams&body=' + message);
   }
 }
 

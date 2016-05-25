@@ -19,6 +19,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
+    tackpaperRedLine();
     var width = calNewWidth('div.instafeed');
     var st = width.newWidth + "px";
     $('div.instagram').css('width', st);
@@ -31,6 +32,18 @@ $(window).resize(function() {
         $(this).addClass('last');
     });
 });
+
+function tackpaperRedLine(){
+    var td = $('td').first();
+    var pos = td.width() + 1+ parseInt(td.css('padding-left')) + parseInt(td.css('padding-right'));
+    var st = pos+"px";
+    console.log("pos:" + st);
+    var redLine = $('div.red-line');
+    redLine.css('margin-left', st);
+    redLine.css('width', '1px');
+    redLine.css('height', '100%');
+    redLine.css('background-color', 'red');
+}
 
 function calNewWidth(ele) {
     var w = parseInt($(ele).width() / 150);
