@@ -1,0 +1,113 @@
+
+
+/*issue menu main div or container*/
+#issue-menu{
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#receiptButton{
+    position: absolute;
+    left: 320px;
+    top:20px;
+}
+
+/*"Choose your issue" text*/
+#issue-text{
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 200px;
+	left: 95px;
+	font-size: 20px;
+	 	
+}
+
+/*line under*/
+#issue-line{
+	position: absolute;
+	top: 230px;
+	left: 75px;
+	height: 2px;
+	width: 200px;
+	background-color: white;
+	opacity: 0.5;
+}
+
+/*container for checkbox*/
+#issue-box{
+	height:80px;
+	width: 350px;
+	position: absolute;
+	left: 10px;
+	top: 250px;
+	color:white;
+
+}
+
+/*when button selected*/
+.btn.selected{
+    background-color: darkgreen;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus { outline: none; ! important; outline-style: none; }
+
+
+/*"rate" text*/
+#rate-text{
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 179px;
+	left: 130px;
+	font-size: 35px;
+	margin: auto;
+	margin-top: 30px;
+
+	
+}
+
+/*line right*/
+#long-line1{
+	width: 180px;
+	margin-left: 85px;
+	margin-top: -5px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	left: 135px;
+	margin-top: 35px;
+
+}
+
+/*line left*/
+#long-line2{
+	width: 120px;
+	margin-left: 85px;
+	margin-top: -5px;
+	height: 2px;
+	background-color: white;
+	position: absolute;
+	right: 250px;
+	margin-top: 35px;
+}
+
+/*rate number*/
+#rate-number{
+	width: 300px;
+	font-family: Open Sans, Segoe UI Light,sans-seri;
+	position: absolute;
+	top: 300px;
+	left: 10px;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+
+

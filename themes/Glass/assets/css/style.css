@@ -1,0 +1,103 @@
+
+/*=============================================================
+    Author Website: www.jn23.me
+    Theme based URL: www.designbootstrap.com
+    http://www.designbootstrap.com/
+    License: MIT
+    http://opensource.org/licenses/MIT
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
+   
+========================================================  */
+
+
+
+/*================================
+    GENERAL STYLES
+==================================*/
+
+@import url('http://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 13pt;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.head-set {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad-bottom {
+    padding-bottom: 60px;
+}
+
+/*================================
+    HOME SECTION STYLES
+==================================*/
+
+
+#home {
+    background: url(../img/background.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 400px;
+}
+
+    #home .overlay {
+        background-color: rgba(50, 150, 175,0.55);
+        min-height: 400px;
+        color: #fff;
+}
+
+    #home h1 {
+        padding-top: 80px;
+        font-weight: 200;
+        font-size: 100px;
+    }
+
+
+/*======================================
+    PARALLAX LIKE / STATS SECTION STYLES
+=========================================*/
+
+.parallax-like {
+    background: url(../img/apple.jpg) no-repeat center top; /* DEFINE IMAGE PATH CAREFULLY*/
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+    .parallax-like .overlay {
+        background: rgba(50, 150, 175,0.5);
+        font-size: 40px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+
+/*================================
+    FOOTER SECTION STYLES
+==================================*/
+
+footer {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+        background: rgba(50, 150, 175,0.9);
+    color: #fff;
+}
+
+    footer a, footer a:hover {
+        color: #fff;
+        text-decoration: none;
+    }

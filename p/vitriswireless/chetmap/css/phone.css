@@ -1,0 +1,24 @@
+#phone-container{
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+    width: 85%;
+    margin-left: 90px;
+    height: 100%;
+}
+
+#phone-choices{
+    height: 50px;
+}
+.phone-text{
+    position: absolute;
+    top: 245px;
+    left: 33px;
+    color: white;
+    
+}
+.phone-pic{
+    vertical-align: top;
+    cursor: pointer;
+}
+

@@ -1,0 +1,56 @@
+/* 
+ * Powered by: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  background-image: url(images/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+  font-family: 'NEW ACADEMY';
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+	padding: 10px;
+  }
+}
+
+@font-face {
+	font-family: "NEW ACADEMY";
+	src: url(fonts/NEWACADEMY.ttf) format("truetype");
+}
+
+r {
+	color: rgb(212, 37, 37);
+}
+
+.boost {
+	color: rgb(212, 37, 37);
+	text-decoration: underline;
+	text-decoration-color: rgb(212, 37, 37);
+}
+
+.social {
+	font-size: 30px;
+	transition: 1s;
+	color: rgb(212, 37, 37);
+}
+
+.social i{
+	margin-left: 10px;
+	margin-right: 10px;
+	color: rgb(212, 37, 37);
+	transition: .5s;
+}
+
+.social i:hover{
+	color: #f77;
+	cursor: pointer;
+}
+
+.coming-soon {
+	-webkit-animation-duration: 6s;
+	-vendor-animation-duration: 6s;
+}

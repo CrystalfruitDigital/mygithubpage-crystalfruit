@@ -1,0 +1,370 @@
+{
+  "settings": {
+    "currentPage": "index.html"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": ""
+      },
+      "components": [
+        {
+          "_params": {
+            "logo": false
+          },
+          "items": "<ul class=\"nav nav-pills pull-right\"><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item\" id=\"note-editor-12\">HOME</a></li><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item\" id=\"note-editor-13\">ABOUT</a></li><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item\" id=\"note-editor-14\">CONTACT</a></li></ul>",
+          "logo": "{PROJECT_IMAGES}logo.png",
+          "brand": "<br>",
+          "_name": "menu",
+          "_anchor": "menu-5",
+          "_styles": {
+            "A": {
+              "color": "#c1c1c1"
+            }
+          }
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}Boost Design Guide1 .png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#28324e",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#222",
+            "overlayOpacity": "0"
+          },
+          "text": "\n                        \n                        <h1><br></h1><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>\n                    \n                    ",
+          "buttons": "",
+          "_name": "header1",
+          "_anchor": "header1-1",
+          "_styles": {
+            "H1": {
+              "font-family": "'Titillium Web', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700",
+              "color": "#b8312f"
+            },
+            "P": {
+              "font-family": "'Montserrat', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Montserrat:400,700",
+              "font-size": "100px"
+            }
+          }
+        },
+        {
+          "_params": {
+            "inverse": false,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#cccccc",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "text": "\n                    <h2>02 - TABLE OF CONTENTS</h2>\n                ",
+          "button": "",
+          "_name": "msg-box2",
+          "_anchor": "msg-box2-7",
+          "_styles": {
+            "H2": {
+              "color": "#252525"
+            }
+          }
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}Boost Design Guide2 .png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#f0f0f0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#222",
+            "overlayOpacity": "0"
+          },
+          "text": "<br>",
+          "buttons": "",
+          "_name": "header2",
+          "_anchor": "header2-3"
+        },
+        {
+          "_params": {
+            "inverse": false,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#b8312f",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "text": "\n                    <h2>03 - ABOUT THE BRAND</h2>\n                ",
+          "button": "",
+          "_name": "msg-box2",
+          "_anchor": "msg-box2-6",
+          "_styles": {
+            "H2": {
+              "color": "#ffffff"
+            }
+          }
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}Boost Design Guide3.png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#f0f0f0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#222",
+            "overlayOpacity": "0"
+          },
+          "text": "\n                        <h2><br></h2>\n                    ",
+          "buttons": "",
+          "_name": "header2",
+          "_anchor": "header2-4"
+        },
+        {
+          "_params": {
+            "textAlign": "left",
+            "inverse": true,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#b6adad",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "image": "{PROJECT_IMAGES}%23boost square logo transparent.png",
+          "text": "\n                        <p>\n                        \n                        </p><h2>04 - The Logo</h2><p></p><p>The #Boost logo meshes simplicity with material design and simple yet effective symbolism. It is a combination of the hash symbol ana round, yet sharp interpretation of the letter \"B\" and is meant to exude a <span style=\"font-weight: bold; font-style: italic;\">bold, clean and modern</span> look.</p><p><br></p><p>The charcoal gray and velvet red used portray luxury and wealth, which is what our service aims to bring to our clients. The simple two-color scheme, in tandem with the simple sharp design, also suggests that using the service will be straightforward and easy.</p>\n                    ",
+          "button": "",
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-6",
+          "_styles": {
+            "H2": {
+              "color": "#ab0000",
+              "font-size": "48px"
+            },
+            "P": {
+              "color": "#000000",
+              "font-size": "20px"
+            },
+            "DIV": {
+              "font-size": "23px",
+              "font-family": "'Titillium Web', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700"
+            }
+          }
+        },
+        {
+          "_params": {
+            "inverse": false,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "text": "\n                    <h2>05 - THE COLORS</h2>\n                ",
+          "button": "",
+          "_name": "msg-box2",
+          "_anchor": "msg-box2-8",
+          "_styles": {
+            "H2": {
+              "font-family": "'Titillium Web', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700",
+              "color": "#b8312f"
+            }
+          }
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}Boost Design Guide5.png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#f0f0f0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#222",
+            "overlayOpacity": "0"
+          },
+          "text": "\n                        <h2><br></h2>\n                    ",
+          "buttons": "",
+          "_name": "header2",
+          "_anchor": "header2-9"
+        },
+        {
+          "_params": {
+            "inverse": false,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "text": "\n                    <h2>06 - TYPOGRAPHY</h2>\n                ",
+          "button": "",
+          "_name": "msg-box2",
+          "_anchor": "msg-box2-10",
+          "_styles": {
+            "H2": {
+              "color": "#00828c"
+            }
+          }
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}Boost Design Guide6.png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#f0f0f0",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#222",
+            "overlayOpacity": "0"
+          },
+          "text": "\n                        <h2><br></h2>\n                    ",
+          "buttons": "",
+          "_name": "header2",
+          "_anchor": "header2-11"
+        },
+        {
+          "_params": {
+            "textAlign": "left",
+            "inverse": false,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#ffffff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "image": "{PROJECT_IMAGES}icon1.png",
+          "text": "\n                        <p><span style=\"font-size: 25px; font-weight: bold; letter-spacing: 6px; line-height: 37.5px;\">07 - ICONS</span></p><p><br></p><p>Inspired by Google's Material design, #Boost's icons aim to be bold, clean and modern. Ideally, icons will follow the #Boost color scheme and should be uniform in style.</p><p><br></p><p>Using simple, easily understand illustration and material depth, and designing icons that come with user interaction in mind when appropriate, will lead to greater user delight.</p>\n                    \n                    ",
+          "button": "",
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-14",
+          "_styles": {
+            "P": {
+              "color": "#252525",
+              "font-size": "25px",
+              "font-family": "'Roboto', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Roboto:400,300,700"
+            }
+          }
+        },
+        {
+          "_params": {
+            "textAlign": "left",
+            "inverse": true,
+            "bgImageRadio": false,
+            "bgImage": "{PROJECT_IMAGES}bg.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "image": "{PROJECT_IMAGES}touch-of-red-in-a-grey-world1400x875_168.jpg",
+          "text": "\n                        \n                        <h2>08 - PHOTOGRAPHY</h2><p>#Boost Photography is essential to our design, and the photographs that are chosen to represent our brand should reflect all of our design choices.</p><p><br></p><p>From the \"bold, clean, modern\" mantra, to the color scheme, pictures that are used should look and feel like they are from the #Boost brand and thus should be instantly recognizable as such.</p><p><br></p><p>The composition should be easy to understand, with a strong focal point of (usually) velvet red, a clear focus of eye-catching subject matter and defined expressive content imbedded into the photograph's meaning</p>\n                    \n                    ",
+          "button": "",
+          "_name": "msg-box4",
+          "_anchor": "msg-box4-15"
+        },
+        {
+          "_params": {
+            "bgImageRadio": true,
+            "bgImage": "{PROJECT_IMAGES}CrystalFruit.png",
+            "parallax": true,
+            "bgColorRadio": false,
+            "bgColor": "#28324e",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "text": "\n                        \n                        <h1><br></h1><h1><br></h1><h1>A Project By:</h1><h1><br></h1><h1><br></h1><h1><br></h1><h1><br></h1><h1><br></h1>\n                    \n                    ",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-lg btn-link\" href=\"http://mobirise.com\" id=\"note-editor-78\">www.crystalfruitdigital.com</a>",
+          "_name": "header1",
+          "_anchor": "header1-16",
+          "_styles": {
+            "H1": {
+              "color": "#3e829b",
+              "font-family": "'Titillium Web', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Titillium+Web:400,300,700"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

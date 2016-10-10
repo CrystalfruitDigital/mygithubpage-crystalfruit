@@ -1,0 +1,75 @@
+@import "compass/css3";
+
+@import "compass/css3";
+
+body{
+  background: blue;
+}
+
+.container{
+  width: 800px;
+  height: 400px;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  margin-left: 100px;
+  
+.diagonal{
+  height: 1200px;
+  width: 200px;
+  overflow: hidden;
+  @include rotate(25deg);
+   position: absolute;
+   top: -200px;
+  
+  img{
+     @include rotate(-25deg);
+    margin-top: -100px;
+      margin-left: -200px;
+  }
+    
+    .overlay{
+      @include rotate(-25deg);
+      height: 1200px;
+      width: 800px;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      background: black;
+      opacity: 0;
+      color: white;
+      -webkit-transition: opacity .5s;
+      vertical-align: middle;
+      text-align: center;
+      
+      &:hover{
+        opacity: .8;
+      }
+    }
+    
+  &#d0{
+      left: -180px;
+      
+    }
+    
+    &#d1{
+      left: 40px;
+    } 
+    
+     &#d2{
+      left: 260px;
+    
+    } 
+    
+     &#d3{
+      left: 480px;
+    
+    } 
+    
+    &#d4{
+      left: 700px;
+    
+    } 
+    
+}
+}

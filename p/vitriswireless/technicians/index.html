@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/images/preloader.gif"/>
+
+	<title>Vitris Technicians</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+       
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<div class="mobile-info">
+		<center><h3>Locate a Vitris Technician</h3></center>
+		<hr>
+		<div class="row">
+			<div class="col-xs-4">
+				<image src="https://i.gyazo.com/eb1594ecdb7886fc949d6eb5fbf34f8b.png" class="img-responsive"/>
+			</div>
+			<div class="col-xs-6">
+				<b>Ryan Boyd</b>
+				<br>
+				<i>Vitrician</i>
+				<br>
+				Southampton, Pennsylvania
+				<br>
+				♥ ♥ ♥ ♥ ♡ - 4.2/5 Rating
+				<br>
+				"Ryan is awesome" - Customer
+			</div>
+			<div class="col-xs-2">
+				<h4></h4>
+				<b>
+					>
+				</b>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<div class="app">
+		<div class="layer-one">
+			<div class="sidebar">
+				<center><a href="../"><img src="assets/images/logo.jpg" class="img-responsive" style="height: 70px"/></a></center>
+				<h3>Find Your Local Vitris Technician!</h3>
+				<hr>
+				<div></div>
+				<button class="btn btn-success" onclick="getLocation()">Find a technician near me!</button>
+				<hr>
+				<div class="sidebar-info">
+					<h4>Details</h4>
+					<div id="demo">
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="hide-sidebar">
+				<
+			</div> -->
+			<div class="mobile-info-toggle">
+				Show all
+			</div>
+		</div>
+
+		<div class="map-div">
+    		<div id="map" class="map"></div>
+		</div>
+	</div>
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqdp8yu8cMYtiHpD80bSLqNqIF02UtyT0&signed_in=true&callback=initMap"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

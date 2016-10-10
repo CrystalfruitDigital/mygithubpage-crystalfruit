@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<title>WebDev Test</title>
+		<script>
+				function changeCol(){
+					if(document.getElementById("buttonsHeader").style.color == 'white'){
+						document.getElementById("buttonsHeader").style.color = 'black';
+					} else {
+						document.getElementById("buttonsHeader").style.color = 'white';
+					}
+					alert('Button text changed color!');
+				} //y u no work?
+		</script>
+		<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+	</head>
+	
+	<body style="margin:0px;background-color:#DDDDFF;font-family:Segoe UI Light">
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#555555;padding:10px">
+			<fieldset>
+				<legend><h1 style="color:white"> WebDev Testing </h1></legend>
+			
+			<p id="currentTime" style="color:white">Time and weather loading...</p>
+			<script>
+				var myVar=setInterval(function(){myTimer()},1000);
+
+				function myTimer() {
+					var d = new Date();
+					document.getElementById("currentTime").innerHTML = "It is currently "+d.toLocaleTimeString()+". Weather: ";
+				}
+			</script>
+		</div>
+		
+		<table>
+		<tr>
+			<td>
+				<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+					<h2>Factorial Table</h2>
+					<button onClick='showFactorialTable()' id="toggleFactorialTable">Show</button>
+					<p id="factorialTable"></p>
+					<script>
+						function showFactorialTable(){
+							if(document.getElementById("toggleFactorialTable").innerHTML=="Show"){
+								var fact=1;
+								var tableString="";
+								for(i=1;i<10;i++){
+									fact=fact*i;
+									tableString=tableString+"<br>"+i+"! = "+fact;
+								}
+								document.getElementById("factorialTable").innerHTML = tableString
+								document.getElementById("toggleFactorialTable").innerHTML = "Hide";
+							} else {
+								document.getElementById("factorialTable").innerHTML = "";
+								document.getElementById("toggleFactorialTable").innerHTML = "Show";
+							}
+						}
+					</script>
+				</div>
+			</td>
+			<td>
+				<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+					<h2>Factorial Calculator</h2>
+					<script type="text/javascript">
+						function factorize(){
+							var varInput = document.getElementById("factorizeThis").value;
+							var fact=1;
+							var i=1;
+							if (varInput == ""){
+								document.getElementById("factorialOutput")="Please input a valid number!"
+							} else if (varInput >= 0){
+								for(i=1;i<=varInput;i++){
+									fact=fact*i;
+								}
+								document.getElementById("factorialOutput").innerHTML=varInput+"! = "+fact;
+								document.getElementById("factorizeThis").value=0;
+							} else {
+								alert("Cannot compute negatives @ o @");
+								document.getElementById("number").value=0;
+							}
+						}
+					</script>
+					
+					<p id="factorialOutput"></p>
+					<input type="number" id="factorizeThis">
+					<input type="button" onclick="factorize()" value="Factorize!">
+				</div>
+			</td>
+			<td>
+				<div id="buttonDiv" style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+					<h2 id="buttonsHeader" style=":#000000">Buttons</h2>
+					<button onclick="alert('Button=clicked!')" style="font-family:Segoe UI Light">Click me</button>
+					<button onclick="changeCol();">No, click me!</button>
+					<form>
+						<input type="radio" name="radio" value="radio" checked>Radio
+						<input type="checkbox" name="checkbox" value="checkbox" checked>Checkbox
+					</form>
+				</div>
+			</td>
+			<td>
+				<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+					<h2>Fibonacci Sequence</h2>
+					<p>will probably be made later</p>
+					<script>
+						
+					</script>
+				</div>
+			</td>
+		</tr>
+		</table>
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+			<h2>Game 1: Snowball Fight</h2>
+			<p>Collect snowballs</p>
+			<button onClick="addOneSnowball()">Add 1 Snowball</button> <button onClick="throwSnowball()">Throw 1 Snowball</button> <button onClick="Restart()">Restart</button>
+			<p id="snowballs">0</p>
+			<p id="enemy"></p>
+			<div id="test" runat="server">
+			</div>
+			<script>
+			function Restart(){
+				enemyHP = 10;
+				snowballs = 0;
+						updateSnowballAmount();
+				hideEnemy();
+			}
+				var snowballs = 0;
+				var enemyHP = 10;
+				function addOneSnowball(){
+					++snowballs;
+					if (snowballs < 10){
+						updateSnowballAmount();
+					} else {
+						updateSnowballAmount();
+						alert("You have gathered many snowballs... now fight!");
+						showEnemy();
+					}
+				}
+				function throwSnowball(){
+					if(snowballs>0){
+						--snowballs;
+						--enemyHP;
+						updateSnowballAmount();
+						updateEnemyHP();
+					} else if (enemyHP <= 0){
+						destroyEnemy();
+						alert("You've defeated the enemy!");
+					} else {
+						alert("You've run out of snowballs!");
+					}
+				}
+				function updateSnowballAmount(){
+					document.getElementById("snowballs").innerHTML = snowballs;
+				}
+				function showEnemy(){
+					var enemyOne = "<center>(^ u ^)";
+					document.getElementById("enemy").innerHTML = enemyOne;
+				}
+				function hideEnemy()
+{
+document.getElementById("enemy").innerHTML = "";
+}
+				function destroyEnemy(){
+					document.getElementById("enemy").innerHTML = "<center>(x . x)";
+				}
+			</script>
+		</div>
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+			<h2>Game 2: Trivia</h2>
+			<p id="pointScore">Points: 0</p>
+			<h4 id="question">What is 2+2?</h4>
+			<p id="hint"></p>
+			Answer: <input type="text" id="answerBox">
+			<input type="button" onClick="submitAnswer()" value="Submit Answer">
+			<script>
+			
+				var points=0;
+				var currentQuestion="q1";
+				
+				function submitAnswer(){
+					var currentAnswer = document.getElementById("answerBox").value;
+					if (currentQuestion=="q1"){
+						if (currentAnswer == "4" ||currentAnswer == "four"){
+							document.getElementById("hint").innerHTML="You are correct!";
+							points++;
+							question2();
+						} else {
+							document.getElementById("hint").innerHTML="Not quite, try again!";
+						}
+					}
+					else if (currentQuestion=="q2"){
+						if (currentAnswer == "purple"){
+							document.getElementById("hint").innerHTML="You are correct!";
+							points++;
+							alert("You win!");
+						} else {
+							document.getElementById("hint").innerHTML="Not quite, try again!";
+						}
+					}
+					updatePointCount();
+				}
+				
+				function question2(){
+					currentQuestion="q2"
+					document.getElementById("question").innerHTML="What color do you get when you mix red and blue together?";
+				}
+				
+				function updatePointCount(){
+					document.getElementById("pointScore").innerHTML = "Points: "+points;
+				}
+				
+			</script>
+		</div>
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+			<h2>Mouse Event Test</h2>
+			
+			<div style="padding:50px;background-color:#888888" id="mouseTest" onmouseover="mouseon()" onmouseout="mouseoff()"></div>
+			
+			<script>
+				function mouseon(){
+					document.getElementById("mouseTest").innerHTML = "In";
+				}
+				function mouseoff(){
+					document.getElementById("mouseTest").innerHTML = "Out";
+				}
+			</script>
+		</div>
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+			<h2>Slideshow</h2>
+			<div id="slidwrap">
+				<div id="slide1">
+					<p>Slide 1</p>
+				</div>
+				<div id="slide2">
+					<p>Slide 2</p>
+				</div>
+				<div id="slide3">
+					<p>Slide 3</p>
+				</div>
+			</div>
+			<button onClick="prevSlide">&lt;&lt;</button>
+			<button onclick="nextSlide">&gt;&gt;</button>
+		</div>
+		
+		<div style="margin:15px;box-shadow:0px 3px 5px #888888;background-color:#F1F1F1;padding:10px">
+			<h2>
+		</div>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,25 @@
+html, body{
+	margin-top: 10px;
+	padding: 0;
+	background-color: #fff;
+	font-family: Segoe UI Light;
+	font-size: 14pt;
+}
+
+.listings {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 5px;
+	color: #fff;
+	border-radius: 20%;
+	margin: 1px 20% 1px 17%;
+}
+
+li:hover {
+	background-color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+}

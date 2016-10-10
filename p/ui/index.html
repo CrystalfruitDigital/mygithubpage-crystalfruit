@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html ng-app="numListApp">
+
+<head>
+	<title>UI Element Reconstruction</title>
+	<link rel="stylesheet" href="./style.css"/>
+</head>
+
+<body ng-controller="mainCtrl">
+	<div class="listings">
+		<h3>UI Stuff:</h3>
+		<hr>
+		<ul ng-repeat="number in numbers | filter: {exists: 'true'} : true">
+			<li ng-click="openThis(number.num)">
+				{{number.num}}
+			</li>
+		</ul>
+		<!-- <li onclick="window.open('#')">
+			<a href="#">98</a>
+		</li> -->
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="ngMain.js"></script>
+</body>
+
+</html>

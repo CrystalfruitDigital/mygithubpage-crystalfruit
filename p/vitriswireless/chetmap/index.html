@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html ng-app ="app">
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0" >
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/map_style.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/phone.css">
+    <link rel="stylesheet" type="text/css" href="css/main_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/issue_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/receipt.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+      
+  </head>
+  <body ng-controller="phoneController">
+
+    <!-- map -->
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' >
+        <ui-gmap-window show="map.window.show" coords="map.window.model" options="map.window.options" closeclick="map.window.closeClick()">
+            
+                <div id = "container">
+                    <div id = "top" class = "animated fadeInDown"><img class = "animated delay bounceInDown " src={{map.window.model.content.img}} alt="Non" />
+                    <p id = "name"> {{map.window.model.content.name}}</p></div>
+                      <div id = "info-tab" >
+                            <div id = "info-tab-left" class = "animated fadeInLeft"><p class = "number ">100</p><p class = "text">Number of Repairs</p></div>
+                            <div id = "info-tab-right" class = "animated fadeInRight"><p class = "number">4.5/5</p><p class = "text">Rating </p></div>
+                      </div>
+                      <div id = "info-para" class = "animated delay fadeIn ">{{map.window.model.content.info}}</div>
+                      <button type="button" ng-class="windowButton" id = "button-marker">Repair Now</button>
+                    <strong class = "animated delay fadeIn">{{map.window.model.content.phoneNumber}}</strong>
+            </div>
+            
+        </ui-gmap-window>
+       
+        <ui-gmap-markers  models="map.markers" coords="'self'" docluster="false" fit="'true'" icon="'icon'" events="map.markersEvents" options="'options'"> </ui-gmap-markers>
+        
+    </ui-gmap-google-map>
+    
+    <!-- menu start-->  
+    <div id ="menu"  ng-init="showTab1 = true; showTab2 = false;showTab3 = false; showTab4 = false" >
+<!--back button -->
+        <button id = "back" ng-class = "backButton" ng-click ="tabBackward();clearArray();windowButtonChange()">back</button>
+        
+      <!-- main logo -->
+      <img  id = "main-logo" src="http://crystalfruitdigital.github.io/mygithubpage-crystalfruit/p/vitriswireless/assets/images/logo-trans.png" alt="">
+        
+<!-- The main menu Tab-->   
+        
+      <div id="main-menu" ng-if="showTab1" ng-class = "class1" >
+        <p id = "text-device">Choose Your Device</p>
+        <div class ="line"></div>
+          
+<!-- model button -->
+
+        <!-- apple -->  
+        <div id = "apple" class = "phone-tab"  ng-init="apple = 0" ng-click = "tabForward(1); phoneFunction(apple); currentTab = 2"><img src="./img/apple_logo.png" alt=""></div>
+          
+        <!-- samsung -->    
+        <div id= "sam" class = "phone-tab"  ng-init="sam = 1"ng-click = "tabForward(1); phoneFunction(sam)"><img src="./img/samsung_logo.png" alt=""></div>
+          
+        <!-- lg -->    
+        <div id = "lg" class = "phone-tab" ng-init="lg = 2" ng-click = "tabForward(1); phoneFunction(lg)"><img src="./img/LG_logo.png" alt=""></div>
+          
+        <!-- android -->    
+        <div id = "and" class = "phone-tab" ng-init="and = 3" ng-click = "tabForward(1); phoneFunction(and)"><img src="./img/android-logo.png" alt=""></div>
+      </div>
+<!-- end of main menu-->
+
+<!--phone selection -->
+        <div id = "phone-container" ng-class = "class2" ng-if = "showTab2">
+        
+            <div class = " row" id= "phone-choices"ng-repeat="phone in choosenBrand">
+                <div class = "col-sm-12"  >
+                
+                  
+                     <button ng-click="tabForward(2); choosenPhone(phone)" class="phone-text btn btn-success btn-block  "> {{phone}}
+                    </button> 
+                </div>
+                
+            </div>
+            
+        
+        </div>
+<!--phone selection -->
+
+<!-- issue menu-->
+      <div id="issue-menu" ng-class = "class3" ng-if="showTab3" >
+          
+          <button id = "receiptButton"  ng-class = "receiptButtonClass" ng-click="tabForward(3); result()">YAY!!</button>
+        
+        <p id= "issue-text" >Choose your issues</p>
+        <div id="issue-line"></div>
+          
+<!-- issue container -->
+        <div id="issue-box" >
+            
+<!-- issue button-->
+        <div ng-repeat="issue in issues">
+            
+                <button ng-class = "issue.button" ng-click="toggleSelection(issue.number); buttonVisible()" ><span class = "pull-left">{{issue.name}}</span> <span class="pull-right"> ${{issue.lowerCost}}-{{issue.higherCost}} </span></button>
+            
+</div>
+            <!--Rate container-->
+            <div id="rate-block">
+              <div id="long-line1"></div>
+              <div id="long-line2"></div>
+              <p id ="rate-text">Rate</p>
+              <div id="rate-number">
+                <div>${{lower}} - {{higher}}</div>
+                  
+              </div>
+            </div>
+        </div>
+<!-- end of container -->
+    
+          
+<!-- receipt container -->        
+</div>
+        <div id = "receipt" ng-class = "class4" ng-if="showTab4">
+            <span id="phone-receipt-text">{{selectedPhone}}</span> 
+            <div id = "phone-receipt"class = " row">
+                
+                <div class = "col-sm-4">
+                    
+                    
+                         
+                </div>
+                <!-- issue selected -->
+              <div class = "selected-issue-text"ng-repeat="issue in selectedIssue track by $index">
+                  {{issue.name}}
+                  
+              </div>
+              
+          </div>
+            <!-- total block -->
+               <div id="total-block">
+              <div id="receipt-long-line1"></div>
+              <div id="receipt-long-line2"></div>
+              <p id ="total-text">Total</p>
+              <div id="total-number">
+                <div>${{totalCost}}</div>
+                  
+              </div>
+            </div>
+        </div>
+        </div>
+<!-- end of container -->  
+</div>
+
+    
+        
+
+    <script src="./js/angular.min.js"></script>
+    
+    <script src='./js/lodash.min.js'></script>
+    <script src='./js/angular_logger.js'></script>
+    <script src='./js/angular-google-maps.min.js'></script>  
+        <script src="./js/rate_adding.js"></script>
+
+  </body>
+</html>

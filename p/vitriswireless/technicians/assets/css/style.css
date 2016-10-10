@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+/*!
+ * Vitris Theme is based off of Bootstrap + Clean v2.0.0 by Script Eden
+ * Licensed under MIT
+*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	font: 300 14px/1.8 'Open Sans', Segoe UI Light, sans-serif;
+	color: #666;
+	overflow: hidden;
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: #228845;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+/* APP */
+
+.app {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.layer-one {
+	z-index: 900;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.hide-sidebar {
+	margin-top: 25%;
+	float: left;
+	z-index: 1001;
+	background-color: white;
+	padding: 10px;
+	-webkit-box-shadow: 5px 1px 15px -5px rgba(0,0,0,.5);
+	-moz-box-shadow: 5px 1px 15px -5px rgba(0,0,0,.5);
+	box-shadow: 5px 1px 15px -5px rgba(0,0,0,.5);
+	transition: .2s;
+	pointer-events: auto;
+}
+
+.hide-sidebar:hover {
+	cursor: pointer;
+	background-color: #afa;
+}
+
+.sidebar {
+	width: 25%;
+	height: 100%;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+	z-index: 1000;
+	pointer-events: auto;
+		transition: .5s;
+
+	-webkit-box-shadow: 0 0px 26px -1px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0px 26px -1px rgba(0,0,0,.5);
+	box-shadow: 0 0px 26px -1px rgba(0,0,0,.5);
+}
+
+.sidebar-info {
+	overflow-y: scroll;
+	max-height: 50%;
+}
+
+.sidebar-info::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.sidebar-info::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+ 
+.sidebar-info::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+h3 {
+	color: #5a6;
+}
+
+.map-div {
+	width: 75%;
+	height: 100%;
+	float: right;
+	background-color: green;
+	z-index: 500;
+	transition: .5s;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+	z-index: 501;
+}
+
+.mobile-info {
+	display: none;
+	padding: 5px;
+}
+
+.mobile-info-toggle {
+	display: none;
+}
+
+/* MEDIA */
+
+@media (max-width: 767px) {
+
+	body {
+		overflow: scroll;
+	}
+
+	.mobile-info-toggle {
+		background-color: white;
+		padding: 5px;
+		border-radius: 10px;
+		display: block;
+		text-align: center;
+		max-width: 100px;
+		margin-left: 5px;
+		z-index: 600;
+		pointer-events: auto;
+	}
+
+	/* APP */
+
+	.app {
+		width: 100%;
+		height: auto;
+	}
+
+	.layer-one {
+		z-index: 900;
+		width: 100%;
+		height: 100%;
+	}
+
+	.hide-sidebar {
+		display: none;
+	}
+
+	.sidebar {
+		width: 100%;
+		height: auto;
+		padding: 5px;
+		transition: .5s;
+	}
+
+	h3 {
+		color: #5a6;
+	}
+
+	.map-div {
+		width: 100%;
+		height: 800px;
+		background-color: green;
+		z-index: 900;
+		transition: .5s;
+	}
+
+	.sidebar-info {
+		display: none;
+	}
+
+	.map {
+		width: 100%;
+		height: 100%;
+		z-index: 501;
+	}
+
+
+}
+
+@media (max-width: 480px) {
+
+	body {
+		overflow: scroll;
+	}
+
+	.mobile-info {
+		display: block;
+	}
+
+	.app {
+		display: none
+	}
+
+}
